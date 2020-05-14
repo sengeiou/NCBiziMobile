@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NCBSubPaymentAccountTableViewCell" rowHeight="132" id="KGk-i7-Jjw" customClass="NCBSubPaymentAccountTableViewCell" customModule="NCBApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="132"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="131.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXl-kT-hNk">
+                        <rect key="frame" x="20" y="20" width="229" height="67.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMZ-Eo-sfT" userLabel="limit Lbl">
+                        <rect key="frame" x="249" y="43.5" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vic-lg-d7t">
+                        <rect key="frame" x="20" y="87.5" width="270" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ho3-Pg-9xF">
+                                <rect key="frame" x="0.0" y="0.0" width="131" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4D-27-UVi" customClass="NCBCurrencyLabel" customModule="NCBApp" customModuleProvider="target">
+                                <rect key="frame" x="139" y="0.0" width="131" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="c4D-27-UVi" firstAttribute="width" secondItem="ho3-Pg-9xF" secondAttribute="width" id="YN5-9V-aIC"/>
+                            <constraint firstAttribute="height" constant="24" id="bt1-nP-j03"/>
+                        </constraints>
+                    </stackView>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEd-9j-hzv">
+                        <rect key="frame" x="300" y="94" width="6" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="6" id="1f9-9O-iIg"/>
+                            <constraint firstAttribute="height" constant="11" id="dt1-9l-mVd"/>
+                        </constraints>
+                        <state key="normal" image="ic_next"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNI-aZ-PJx">
+                        <rect key="frame" x="20" y="130.5" width="271" height="1"/>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Klz-pc-4nl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KNI-aZ-PJx" firstAttribute="trailing" secondItem="hMZ-Eo-sfT" secondAttribute="trailing" id="7yK-ph-e8I"/>
+                    <constraint firstItem="KNI-aZ-PJx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="9tx-eF-Bph"/>
+                    <constraint firstAttribute="bottom" secondItem="vic-lg-d7t" secondAttribute="bottom" constant="20" id="EA5-1F-JyG"/>
+                    <constraint firstItem="LXl-kT-hNk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="OgV-9R-cay"/>
+                    <constraint firstItem="hMZ-Eo-sfT" firstAttribute="centerY" secondItem="LXl-kT-hNk" secondAttribute="centerY" id="Sat-FO-wro"/>
+                    <constraint firstAttribute="bottom" secondItem="KNI-aZ-PJx" secondAttribute="bottom" id="TmX-2o-OpB"/>
+                    <constraint firstItem="QEd-9j-hzv" firstAttribute="leading" secondItem="vic-lg-d7t" secondAttribute="trailing" constant="10" id="Z1k-fk-0Aj"/>
+                    <constraint firstItem="vic-lg-d7t" firstAttribute="leading" secondItem="LXl-kT-hNk" secondAttribute="leading" id="c8K-qv-iUs"/>
+                    <constraint firstItem="hMZ-Eo-sfT" firstAttribute="leading" secondItem="LXl-kT-hNk" secondAttribute="trailing" id="fLK-B8-H3i"/>
+                    <constraint firstAttribute="trailing" secondItem="hMZ-Eo-sfT" secondAttribute="trailing" constant="35" id="h2r-DI-2xp"/>
+                    <constraint firstItem="LXl-kT-hNk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="hd9-AD-BQ4"/>
+                    <constraint firstAttribute="trailing" secondItem="QEd-9j-hzv" secondAttribute="trailing" constant="20" id="kDn-Cc-R8i"/>
+                    <constraint firstItem="vic-lg-d7t" firstAttribute="top" secondItem="LXl-kT-hNk" secondAttribute="bottom" id="lgt-dz-aVJ"/>
+                    <constraint firstItem="QEd-9j-hzv" firstAttribute="centerY" secondItem="vic-lg-d7t" secondAttribute="centerY" id="nce-jj-SUW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="limitLbl" destination="hMZ-Eo-sfT" id="XjQ-4G-rty"/>
+                <outlet property="paymentAccountDetailBtn" destination="QEd-9j-hzv" id="MQt-kU-IUu"/>
+                <outlet property="paymentAccountNameLbl" destination="LXl-kT-hNk" id="V3K-qf-7ef"/>
+                <outlet property="paymentAccountSerieLbl" destination="ho3-Pg-9xF" id="fe0-9g-t6I"/>
+                <outlet property="paymentAccountSurplusLbl" destination="c4D-27-UVi" id="D23-SN-j7X"/>
+                <outlet property="seperatorView" destination="KNI-aZ-PJx" id="dKa-RH-kPe"/>
+            </connections>
+            <point key="canvasLocation" x="146.37681159420291" y="55.580357142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_next" width="6" height="11"/>
+    </resources>
+</document>

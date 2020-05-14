@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NCBPinDetailView" customModule="NCBApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="118"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nM-2X-ZCA">
+                    <rect key="frame" x="232" y="10" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="69g-Qk-XuK"/>
+                        <constraint firstAttribute="width" constant="28" id="8LJ-2O-tOu"/>
+                    </constraints>
+                    <state key="normal" image="ic_popup_close"/>
+                    <connections>
+                        <action selector="closeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="oA8-8v-Qfg"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vG2-PO-5Qj">
+                    <rect key="frame" x="15" y="33" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3C-jm-exB">
+                    <rect key="frame" x="15" y="64" width="240" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H69-sj-DJL">
+                    <rect key="frame" x="15" y="94" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="k3C-jm-exB" secondAttribute="trailing" constant="15" id="1Nj-7K-RpM"/>
+                <constraint firstItem="k3C-jm-exB" firstAttribute="leading" secondItem="vG2-PO-5Qj" secondAttribute="leading" id="2gc-X8-STh"/>
+                <constraint firstItem="k3C-jm-exB" firstAttribute="top" secondItem="vG2-PO-5Qj" secondAttribute="bottom" constant="10" id="Dbe-jt-VXn"/>
+                <constraint firstItem="H69-sj-DJL" firstAttribute="top" secondItem="k3C-jm-exB" secondAttribute="bottom" constant="9.5" id="IFt-8L-TZo"/>
+                <constraint firstItem="vG2-PO-5Qj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="UEK-1s-Dcl"/>
+                <constraint firstItem="9nM-2X-ZCA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="a15-96-sVM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9nM-2X-ZCA" secondAttribute="trailing" constant="10" id="fzf-Eq-6Ki"/>
+                <constraint firstItem="H69-sj-DJL" firstAttribute="leading" secondItem="k3C-jm-exB" secondAttribute="leading" id="m1z-Kf-RZj"/>
+                <constraint firstItem="vG2-PO-5Qj" firstAttribute="top" secondItem="9nM-2X-ZCA" secondAttribute="bottom" constant="-5" id="orF-ay-Vhd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="lbAddress" destination="k3C-jm-exB" id="K61-w3-1C0"/>
+                <outlet property="lbName" destination="vG2-PO-5Qj" id="cJH-aE-BzQ"/>
+                <outlet property="lbPhone" destination="H69-sj-DJL" id="xcQ-hr-E4q"/>
+            </connections>
+            <point key="canvasLocation" x="22.399999999999999" y="340.92953523238384"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_popup_close" width="28" height="28"/>
+    </resources>
+</document>

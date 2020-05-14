@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Online Payment Register View Controller-->
+        <scene sceneID="Mcc-mS-ydj">
+            <objects>
+                <viewController storyboardIdentifier="NCBOnlinePaymentRegisterViewController" id="Xmd-sU-ieI" customClass="NCBOnlinePaymentRegisterViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fto-nQ-pGK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transaction_info_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ITe-7e-XIu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTU-TD-U6P" customClass="NCBCreditCardInfoView" customModule="NCBApp" customModuleProvider="target">
+                                <rect key="frame" x="23.5" y="60" width="328" height="207"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="328" id="K1M-54-Flg"/>
+                                    <constraint firstAttribute="width" secondItem="OTU-TD-U6P" secondAttribute="height" multiplier="328:207" id="UeK-0p-uJ2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ITe-7e-XIu" secondAttribute="trailing" id="5Py-08-qB9"/>
+                            <constraint firstItem="OTU-TD-U6P" firstAttribute="centerX" secondItem="DVM-wA-RHF" secondAttribute="centerX" id="MHF-mo-kqV"/>
+                            <constraint firstAttribute="bottom" secondItem="ITe-7e-XIu" secondAttribute="bottom" id="NM6-e3-brh"/>
+                            <constraint firstItem="ITe-7e-XIu" firstAttribute="leading" secondItem="fto-nQ-pGK" secondAttribute="leading" id="Qlc-ne-LWo"/>
+                            <constraint firstItem="OTU-TD-U6P" firstAttribute="top" secondItem="DVM-wA-RHF" secondAttribute="top" constant="40" id="ToU-SZ-wfN"/>
+                            <constraint firstItem="ITe-7e-XIu" firstAttribute="top" secondItem="fto-nQ-pGK" secondAttribute="top" id="Trr-f7-cHt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DVM-wA-RHF"/>
+                    </view>
+                    <connections>
+                        <outlet property="commonCreditCardInfoView" destination="OTU-TD-U6P" id="ktR-Yc-3H0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egI-dz-rWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6" y="73"/>
+        </scene>
+        <!--Online Payment Verify View Controller-->
+        <scene sceneID="JcZ-UR-lEn">
+            <objects>
+                <viewController storyboardIdentifier="NCBOnlinePaymentVerifyViewController" id="TMK-0N-syA" customClass="NCBOnlinePaymentVerifyViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z6s-oL-Kt0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="faa-fy-C4G">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDq-d9-7yO">
+                                        <rect key="frame" x="10" y="20" width="355" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0D-up-dqA">
+                                        <rect key="frame" x="317" y="16.5" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="28" id="XKY-pj-Mct"/>
+                                            <constraint firstAttribute="height" constant="28" id="k7o-oc-JE1"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="ic_popup_close"/>
+                                        <connections>
+                                            <action selector="closeAction:" destination="TMK-0N-syA" eventType="touchUpInside" id="2nl-I6-DN3"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zMk-4U-Uc6">
+                                        <rect key="frame" x="30" y="60.5" width="315" height="1"/>
+                                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Bce-I8-lmM"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ld7-be-Mq4">
+                                        <rect key="frame" x="50" y="71.5" width="275" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fii-io-dQk" customClass="NCBAuthenticateTransactionView" customModule="NCBApp" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="107" width="315" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="QUs-ni-SO0"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDy-34-FX0" customClass="NCBCommonButton" customModule="NCBApp" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="107" width="315" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="eJb-h1-YnM"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enx-Wa-C1x" customClass="NCBCommonButton" customModule="NCBApp" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="167" width="315" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="X94-Na-gGD"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="enx-Wa-C1x" firstAttribute="top" secondItem="Fii-io-dQk" secondAttribute="bottom" constant="10" id="06Q-hZ-R56"/>
+                                    <constraint firstItem="Fii-io-dQk" firstAttribute="top" secondItem="Ld7-be-Mq4" secondAttribute="bottom" constant="15" id="1UA-4F-ie2"/>
+                                    <constraint firstItem="Ld7-be-Mq4" firstAttribute="top" secondItem="zMk-4U-Uc6" secondAttribute="bottom" constant="10" id="3GH-Z0-5eM"/>
+                                    <constraint firstItem="BDq-d9-7yO" firstAttribute="top" secondItem="faa-fy-C4G" secondAttribute="top" constant="20" id="Abf-Pc-Zeu"/>
+                                    <constraint firstItem="e0D-up-dqA" firstAttribute="trailing" secondItem="zMk-4U-Uc6" secondAttribute="trailing" id="DLX-X2-v7j"/>
+                                    <constraint firstItem="BDq-d9-7yO" firstAttribute="leading" secondItem="faa-fy-C4G" secondAttribute="leading" constant="10" id="EaH-bO-CPE"/>
+                                    <constraint firstItem="e0D-up-dqA" firstAttribute="centerY" secondItem="BDq-d9-7yO" secondAttribute="centerY" id="L0M-cE-NaM"/>
+                                    <constraint firstItem="enx-Wa-C1x" firstAttribute="width" secondItem="Fii-io-dQk" secondAttribute="width" id="Lpg-fQ-A8s"/>
+                                    <constraint firstItem="BDy-34-FX0" firstAttribute="width" secondItem="Fii-io-dQk" secondAttribute="width" id="MTH-yj-3ri"/>
+                                    <constraint firstItem="Fii-io-dQk" firstAttribute="leading" secondItem="zMk-4U-Uc6" secondAttribute="leading" id="NQB-S3-5Y0"/>
+                                    <constraint firstItem="enx-Wa-C1x" firstAttribute="leading" secondItem="Fii-io-dQk" secondAttribute="leading" id="OQX-mH-qNY"/>
+                                    <constraint firstItem="Ld7-be-Mq4" firstAttribute="trailing" secondItem="zMk-4U-Uc6" secondAttribute="trailing" constant="-20" id="WQE-k5-eGn"/>
+                                    <constraint firstItem="zMk-4U-Uc6" firstAttribute="leading" secondItem="faa-fy-C4G" secondAttribute="leading" constant="30" id="aay-oP-diI"/>
+                                    <constraint firstItem="Fii-io-dQk" firstAttribute="width" secondItem="zMk-4U-Uc6" secondAttribute="width" id="d7J-UZ-Mlm"/>
+                                    <constraint firstItem="BDy-34-FX0" firstAttribute="leading" secondItem="Fii-io-dQk" secondAttribute="leading" id="dQu-2E-zre"/>
+                                    <constraint firstItem="BDy-34-FX0" firstAttribute="top" secondItem="Fii-io-dQk" secondAttribute="top" id="diH-ad-mSi"/>
+                                    <constraint firstAttribute="trailing" secondItem="BDq-d9-7yO" secondAttribute="trailing" constant="10" id="ewI-dB-EVO"/>
+                                    <constraint firstItem="Ld7-be-Mq4" firstAttribute="leading" secondItem="zMk-4U-Uc6" secondAttribute="leading" constant="20" id="hPa-4Q-1TR"/>
+                                    <constraint firstAttribute="trailing" secondItem="zMk-4U-Uc6" secondAttribute="trailing" constant="30" id="oVB-vs-Xgm"/>
+                                    <constraint firstItem="zMk-4U-Uc6" firstAttribute="top" secondItem="BDq-d9-7yO" secondAttribute="bottom" constant="20" id="wbq-Pi-xOb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DDy-WJ-hei" firstAttribute="bottom" secondItem="faa-fy-C4G" secondAttribute="bottom" id="DCk-8e-ore"/>
+                            <constraint firstItem="faa-fy-C4G" firstAttribute="top" secondItem="DDy-WJ-hei" secondAttribute="top" id="XFD-oe-Yfk"/>
+                            <constraint firstItem="faa-fy-C4G" firstAttribute="leading" secondItem="z6s-oL-Kt0" secondAttribute="leading" id="b1H-8r-Jt6"/>
+                            <constraint firstItem="DDy-WJ-hei" firstAttribute="trailing" secondItem="faa-fy-C4G" secondAttribute="trailing" id="gkJ-wo-J5i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DDy-WJ-hei"/>
+                    </view>
+                    <connections>
+                        <outlet property="acceptBtn" destination="BDy-34-FX0" id="gD4-Sa-p6c"/>
+                        <outlet property="authenticateView" destination="Fii-io-dQk" id="o2u-ba-kjf"/>
+                        <outlet property="cancelBtn" destination="enx-Wa-C1x" id="ojZ-pE-Ugw"/>
+                        <outlet property="lbDesc" destination="Ld7-be-Mq4" id="51O-50-HWv"/>
+                        <outlet property="lbTitle" destination="BDq-d9-7yO" id="zux-Qe-G7T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SX6-9k-j5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="81"/>
+        </scene>
+        <!--Card Completed Service View Controller-->
+        <scene sceneID="j0u-mV-gxd">
+            <objects>
+                <viewController storyboardIdentifier="NCBCardCompletedServiceViewController" id="Vnb-UC-mqK" customClass="NCBCardCompletedServiceViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rBx-C0-xSg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transaction_info_bg" translatesAutoresizingMaskIntoConstraints="NO" id="fFX-1r-I85">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VdU-3K-G4k" customClass="NCBCreditCardInfoView" customModule="NCBApp" customModuleProvider="target">
+                                <rect key="frame" x="23.5" y="100" width="328" height="207"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VdU-3K-G4k" secondAttribute="height" multiplier="328:207" id="IhI-H3-ulR"/>
+                                    <constraint firstAttribute="width" constant="328" id="dx0-6z-SMC"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MzA-03-EEm">
+                                <rect key="frame" x="43.5" y="327" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4M-Hq-cOt" customClass="NCBStatementButton" customModule="NCBApp" customModuleProvider="target">
+                                <rect key="frame" x="164.5" y="397.5" width="46" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="Gbv-bo-TU9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="p4M-Hq-cOt" firstAttribute="centerX" secondItem="fFX-1r-I85" secondAttribute="centerX" id="8Ci-EY-74v"/>
+                            <constraint firstItem="MzA-03-EEm" firstAttribute="top" secondItem="VdU-3K-G4k" secondAttribute="bottom" constant="20" id="DOa-Tq-NNH"/>
+                            <constraint firstAttribute="trailing" secondItem="fFX-1r-I85" secondAttribute="trailing" id="Dhe-6y-6Iv"/>
+                            <constraint firstItem="VdU-3K-G4k" firstAttribute="centerX" secondItem="P0A-5C-WH0" secondAttribute="centerX" id="EgN-Kd-cHd"/>
+                            <constraint firstItem="MzA-03-EEm" firstAttribute="trailing" secondItem="VdU-3K-G4k" secondAttribute="trailing" constant="-20" id="O5N-iW-mp9"/>
+                            <constraint firstItem="fFX-1r-I85" firstAttribute="top" secondItem="rBx-C0-xSg" secondAttribute="top" id="O7N-Gj-KeY"/>
+                            <constraint firstItem="p4M-Hq-cOt" firstAttribute="top" secondItem="MzA-03-EEm" secondAttribute="bottom" constant="50" id="YDE-4C-yXw"/>
+                            <constraint firstItem="MzA-03-EEm" firstAttribute="leading" secondItem="VdU-3K-G4k" secondAttribute="leading" constant="20" id="c2K-Bb-0F1"/>
+                            <constraint firstItem="VdU-3K-G4k" firstAttribute="top" secondItem="P0A-5C-WH0" secondAttribute="top" constant="80" id="cDD-ee-Imz"/>
+                            <constraint firstAttribute="bottom" secondItem="fFX-1r-I85" secondAttribute="bottom" id="jYB-5O-Jyg"/>
+                            <constraint firstItem="fFX-1r-I85" firstAttribute="leading" secondItem="rBx-C0-xSg" secondAttribute="leading" id="nuA-vw-EOb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="P0A-5C-WH0"/>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="p4M-Hq-cOt" id="rBO-mJ-JFO"/>
+                        <outlet property="commonCreditCardInfoView" destination="VdU-3K-G4k" id="5TS-dj-2V2"/>
+                        <outlet property="lbDesc" destination="MzA-03-EEm" id="P8t-Dx-78F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JER-gQ-gr5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628" y="72"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_popup_close" width="28" height="28"/>
+        <image name="transaction_info_bg" width="125" height="222.5"/>
+    </resources>
+</document>

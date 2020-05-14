@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NCBGeneralAccountAddTableViewCell" rowHeight="82" id="KGk-i7-Jjw" customClass="NCBGeneralAccountAddTableViewCell" customModule="NCBApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnH-Bp-WG0" userLabel="TitleLbl">
+                        <rect key="frame" x="20" y="41" width="256" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7RI-Cz-bQ0" userLabel="Add Btn">
+                        <rect key="frame" x="276" y="29" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="7RI-Cz-bQ0" secondAttribute="height" multiplier="1:1" id="byL-q6-oE8"/>
+                            <constraint firstAttribute="width" constant="24" id="vW4-pY-b9d"/>
+                        </constraints>
+                        <state key="normal" image="ic_accountInfo_add"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7RI-Cz-bQ0" firstAttribute="centerY" secondItem="KnH-Bp-WG0" secondAttribute="centerY" id="EPM-no-Apn"/>
+                    <constraint firstAttribute="trailing" secondItem="7RI-Cz-bQ0" secondAttribute="trailing" constant="20" id="GnL-bg-GK3"/>
+                    <constraint firstItem="KnH-Bp-WG0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="KwG-0o-tRg"/>
+                    <constraint firstItem="7RI-Cz-bQ0" firstAttribute="leading" secondItem="KnH-Bp-WG0" secondAttribute="trailing" id="b5X-VC-1Eo"/>
+                    <constraint firstItem="KnH-Bp-WG0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bBA-MD-tNd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addlBtn" destination="7RI-Cz-bQ0" id="p6c-I0-wyO"/>
+                <outlet property="titleLbl" destination="KnH-Bp-WG0" id="AqO-rw-eaW"/>
+            </connections>
+            <point key="canvasLocation" x="113.04347826086958" y="48.214285714285715"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_accountInfo_add" width="21.333333969116211" height="21.333333969116211"/>
+    </resources>
+</document>

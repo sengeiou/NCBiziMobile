@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Saving Amount View Controller-->
+        <scene sceneID="wGN-PF-XHe">
+            <objects>
+                <viewController storyboardIdentifier="NCBAddSavingAmountViewController" id="zbj-0F-daw" customClass="NCBAddSavingAmountViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5xX-Z7-ipG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48y-rr-foR">
+                                <rect key="frame" x="20" y="44" width="280" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="9N2-1P-cTN"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Do-s3-9Zn">
+                                <rect key="frame" x="20" y="134" width="280" height="1"/>
+                                <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="7Uf-wF-6Hv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NR8-Vj-MAM">
+                                <rect key="frame" x="20" y="135" width="280" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="ggy-Tu-p8i"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Bj-nq-4QK">
+                                <rect key="frame" x="20" y="225" width="280" height="1"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ZRI-17-AdG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HwG-z8-oxs" customClass="NCBTransferAmountView" customModule="NCBApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="226" width="280" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8Ya-VB-H5n"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Pm-6h-anx">
+                                <rect key="frame" x="20" y="276" width="280" height="1"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="7jy-9h-CQb"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9G-sc-mV8">
+                                <rect key="frame" x="139" y="301" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYd-nW-Ttw" customClass="NCBCommonButton" customModule="NCBApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="478" width="280" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kGU-ow-m7x"/>
+                                </constraints>
+                                <state key="normal" title="Tiếp tục"/>
+                                <connections>
+                                    <action selector="clickContinue:" destination="zbj-0F-daw" eventType="touchUpInside" id="TLA-bb-Djl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="48y-rr-foR" firstAttribute="top" secondItem="AiV-vF-c4M" secondAttribute="top" constant="24" id="0eR-fN-NvO"/>
+                            <constraint firstItem="AiV-vF-c4M" firstAttribute="trailing" secondItem="HwG-z8-oxs" secondAttribute="trailing" constant="20" id="0iY-B5-4qX"/>
+                            <constraint firstItem="0Bj-nq-4QK" firstAttribute="centerX" secondItem="5xX-Z7-ipG" secondAttribute="centerX" id="0k5-N7-EHm"/>
+                            <constraint firstItem="3Do-s3-9Zn" firstAttribute="top" secondItem="48y-rr-foR" secondAttribute="bottom" id="2nm-7H-yha"/>
+                            <constraint firstItem="3Do-s3-9Zn" firstAttribute="centerX" secondItem="5xX-Z7-ipG" secondAttribute="centerX" id="4Vm-0t-Awb"/>
+                            <constraint firstItem="0Bj-nq-4QK" firstAttribute="top" secondItem="NR8-Vj-MAM" secondAttribute="bottom" id="4Wg-nG-4fs"/>
+                            <constraint firstItem="4Pm-6h-anx" firstAttribute="centerX" secondItem="5xX-Z7-ipG" secondAttribute="centerX" id="5XD-RN-Rnw"/>
+                            <constraint firstItem="48y-rr-foR" firstAttribute="centerX" secondItem="5xX-Z7-ipG" secondAttribute="centerX" id="5ZM-AG-nlf"/>
+                            <constraint firstItem="HwG-z8-oxs" firstAttribute="leading" secondItem="AiV-vF-c4M" secondAttribute="leading" constant="20" id="92e-NR-2Oa"/>
+                            <constraint firstItem="aYd-nW-Ttw" firstAttribute="width" secondItem="4Pm-6h-anx" secondAttribute="width" id="B0L-RL-qQU"/>
+                            <constraint firstItem="4Pm-6h-anx" firstAttribute="width" secondItem="0Bj-nq-4QK" secondAttribute="width" id="NAu-XO-V83"/>
+                            <constraint firstItem="NR8-Vj-MAM" firstAttribute="width" secondItem="48y-rr-foR" secondAttribute="width" id="OBG-wX-tsx"/>
+                            <constraint firstItem="NR8-Vj-MAM" firstAttribute="centerX" secondItem="5xX-Z7-ipG" secondAttribute="centerX" id="Pvc-qO-qMz"/>
+                            <constraint firstItem="48y-rr-foR" firstAttribute="leading" secondItem="AiV-vF-c4M" secondAttribute="leading" constant="20" id="XSG-PT-gbh"/>
+                            <constraint firstItem="4Pm-6h-anx" firstAttribute="top" secondItem="HwG-z8-oxs" secondAttribute="bottom" id="avV-wd-s8a"/>
+                            <constraint firstItem="NR8-Vj-MAM" firstAttribute="top" secondItem="3Do-s3-9Zn" secondAttribute="bottom" id="dfk-Xt-iRe"/>
+                            <constraint firstItem="w9G-sc-mV8" firstAttribute="top" secondItem="4Pm-6h-anx" secondAttribute="bottom" constant="24" id="kr0-Tp-jyv"/>
+                            <constraint firstItem="w9G-sc-mV8" firstAttribute="centerX" secondItem="5xX-Z7-ipG" secondAttribute="centerX" id="q0L-gg-iS8"/>
+                            <constraint firstItem="0Bj-nq-4QK" firstAttribute="width" secondItem="3Do-s3-9Zn" secondAttribute="width" id="skv-Os-syP"/>
+                            <constraint firstItem="3Do-s3-9Zn" firstAttribute="width" secondItem="48y-rr-foR" secondAttribute="width" id="t3L-xI-8ZV"/>
+                            <constraint firstItem="AiV-vF-c4M" firstAttribute="bottom" secondItem="aYd-nW-Ttw" secondAttribute="bottom" constant="40" id="uTe-lf-zlj"/>
+                            <constraint firstItem="HwG-z8-oxs" firstAttribute="top" secondItem="0Bj-nq-4QK" secondAttribute="bottom" id="xyG-r1-NBc"/>
+                            <constraint firstItem="aYd-nW-Ttw" firstAttribute="centerX" secondItem="5xX-Z7-ipG" secondAttribute="centerX" id="zyr-PH-6LD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AiV-vF-c4M"/>
+                    </view>
+                    <connections>
+                        <outlet property="btContinue" destination="aYd-nW-Ttw" id="LJ5-aX-wja"/>
+                        <outlet property="heightSavingAccountView" destination="ggy-Tu-p8i" id="wQP-wK-6d9"/>
+                        <outlet property="lbInterestRate" destination="w9G-sc-mV8" id="0rL-Xr-kWe"/>
+                        <outlet property="savingAccountView" destination="NR8-Vj-MAM" id="xoy-7H-ox8"/>
+                        <outlet property="sourceAccountView" destination="48y-rr-foR" id="H3S-g1-jiG"/>
+                        <outlet property="transferAmountView" destination="HwG-z8-oxs" id="2OD-rB-dxW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z2f-K6-nmQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="29.464285714285712"/>
+        </scene>
+        <!--Transfer Info Saving View Controller-->
+        <scene sceneID="ila-dW-y5C">
+            <objects>
+                <viewController storyboardIdentifier="NCBTransferInfoSavingViewController" id="moC-5T-rPW" customClass="NCBTransferInfoSavingViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZW8-qE-kAq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="17k-3b-Vy6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vsL-QP-Q1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1494" y="29"/>
+        </scene>
+        <!--Transfer Saving Success View Controller-->
+        <scene sceneID="vuJ-qz-fT3">
+            <objects>
+                <viewController storyboardIdentifier="NCBTransferSavingSuccessViewController" id="zRA-gG-TGl" customClass="NCBTransferSavingSuccessViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H8M-ok-haM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HcM-xO-oCc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q6L-hZ-bqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776" y="29"/>
+        </scene>
+        <!--Detail Saving Final Settlement Account View Controller-->
+        <scene sceneID="fJQ-DO-4LG">
+            <objects>
+                <viewController storyboardIdentifier="NCBDetailSavingFinalSettlementAccountViewController" id="VzS-V9-E32" customClass="NCBDetailSavingFinalSettlementAccountViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oFY-Eu-p8b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXQ-AY-SxD">
+                                <rect key="frame" x="20" y="44" width="280" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="MmH-Ih-93p"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e4T-Vh-NEr">
+                                <rect key="frame" x="20" y="142" width="280" height="324"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Wd-xX-ZHD">
+                                        <rect key="frame" x="4" y="16" width="272" height="292"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9Wd-xX-ZHD" secondAttribute="trailing" constant="4" id="Wai-mH-9jh"/>
+                                    <constraint firstItem="9Wd-xX-ZHD" firstAttribute="top" secondItem="e4T-Vh-NEr" secondAttribute="top" constant="16" id="chg-o3-yQJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Wd-xX-ZHD" secondAttribute="bottom" constant="16" id="j2j-4u-kqO"/>
+                                    <constraint firstItem="9Wd-xX-ZHD" firstAttribute="leading" secondItem="e4T-Vh-NEr" secondAttribute="leading" constant="4" id="sht-0z-6vx"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQO-Fj-hzw" customClass="NCBCommonButton" customModule="NCBApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="478" width="280" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Xx4-jv-gRC"/>
+                                </constraints>
+                                <state key="normal" title="Tiếp tục"/>
+                                <connections>
+                                    <action selector="clickContinue:" destination="VzS-V9-E32" eventType="touchUpInside" id="Icb-re-8ou"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="e4T-Vh-NEr" firstAttribute="width" secondItem="cXQ-AY-SxD" secondAttribute="width" id="5px-Bm-3S3"/>
+                            <constraint firstItem="cXQ-AY-SxD" firstAttribute="leading" secondItem="uEz-Yn-NyD" secondAttribute="leading" constant="20" id="7Rx-0o-Sqv"/>
+                            <constraint firstItem="cXQ-AY-SxD" firstAttribute="centerX" secondItem="oFY-Eu-p8b" secondAttribute="centerX" id="9AW-c6-wif"/>
+                            <constraint firstItem="e4T-Vh-NEr" firstAttribute="top" secondItem="cXQ-AY-SxD" secondAttribute="bottom" constant="8" id="CGG-6F-OqS"/>
+                            <constraint firstItem="uEz-Yn-NyD" firstAttribute="bottom" secondItem="jQO-Fj-hzw" secondAttribute="bottom" constant="40" id="Kf6-Xq-iLM"/>
+                            <constraint firstItem="jQO-Fj-hzw" firstAttribute="centerX" secondItem="oFY-Eu-p8b" secondAttribute="centerX" id="LPL-FH-O8c"/>
+                            <constraint firstItem="cXQ-AY-SxD" firstAttribute="top" secondItem="uEz-Yn-NyD" secondAttribute="top" constant="24" id="Rmg-j7-OLo"/>
+                            <constraint firstItem="e4T-Vh-NEr" firstAttribute="centerX" secondItem="oFY-Eu-p8b" secondAttribute="centerX" id="lYe-xS-vGU"/>
+                            <constraint firstItem="jQO-Fj-hzw" firstAttribute="width" secondItem="cXQ-AY-SxD" secondAttribute="width" id="lcn-ui-RJ5"/>
+                            <constraint firstItem="jQO-Fj-hzw" firstAttribute="top" secondItem="e4T-Vh-NEr" secondAttribute="bottom" constant="12" id="mge-7k-gSG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uEz-Yn-NyD"/>
+                    </view>
+                    <connections>
+                        <outlet property="btContinue" destination="jQO-Fj-hzw" id="yCi-rL-91S"/>
+                        <outlet property="infoTableView" destination="e4T-Vh-NEr" id="aK2-a1-6Yi"/>
+                        <outlet property="sourceAccountView" destination="cXQ-AY-SxD" id="EGi-Zt-c4J"/>
+                        <outlet property="tableView" destination="9Wd-xX-ZHD" id="fDW-D5-RA1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Fn-yU-thK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34" y="740"/>
+        </scene>
+        <!--Transfer InfoSFS View Controller-->
+        <scene sceneID="RhS-E1-GjT">
+            <objects>
+                <viewController storyboardIdentifier="NCBTransferInfoSFSViewController" id="Kor-H7-hBb" customClass="NCBTransferInfoSFSViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UzV-Dd-xnk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KFv-V9-gzH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0JM-jm-JbQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="739"/>
+        </scene>
+        <!--Transfer SuccessSFS View Controller-->
+        <scene sceneID="2ug-eJ-eji">
+            <objects>
+                <viewController storyboardIdentifier="NCBTransferSuccessSFSViewController" id="uRN-ZL-K3S" customClass="NCBTransferSuccessSFSViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b2P-dh-Xyl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="J5K-MT-n8E"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ww9-iG-gug" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1493" y="738"/>
+        </scene>
+    </scenes>
+</document>

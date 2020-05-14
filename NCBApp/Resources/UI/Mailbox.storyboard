@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mailbox View Controller-->
+        <scene sceneID="ZnR-A3-VQ0">
+            <objects>
+                <viewController storyboardIdentifier="NCBMailboxViewController" id="OwM-Mt-z5t" userLabel="Mailbox View Controller" customClass="NCBMailboxViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wf8-jK-v69">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wgw-fw-Wv3" userLabel="Mailbox Tbv">
+                                <rect key="frame" x="0.0" y="59" width="414" height="803"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wgw-fw-Wv3" firstAttribute="top" secondItem="FdR-Ur-BPd" secondAttribute="top" constant="15" id="1EN-b0-4of"/>
+                            <constraint firstItem="FdR-Ur-BPd" firstAttribute="trailing" secondItem="Wgw-fw-Wv3" secondAttribute="trailing" id="9Ku-5P-VZx"/>
+                            <constraint firstItem="FdR-Ur-BPd" firstAttribute="bottom" secondItem="Wgw-fw-Wv3" secondAttribute="bottom" id="KgV-qP-edd"/>
+                            <constraint firstItem="Wgw-fw-Wv3" firstAttribute="leading" secondItem="FdR-Ur-BPd" secondAttribute="leading" id="fx5-fJ-uJz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FdR-Ur-BPd"/>
+                    </view>
+                    <connections>
+                        <outlet property="mailboxTbv" destination="Wgw-fw-Wv3" id="X5n-Z0-GTO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZY-ya-Wch" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="-42"/>
+        </scene>
+        <!--Mailbox Detail View Controller-->
+        <scene sceneID="uOX-T0-i3C">
+            <objects>
+                <viewController storyboardIdentifier="NCBMailboxDetailViewController" id="xNN-mm-Lcx" userLabel="Mailbox Detail View Controller" customClass="NCBMailboxDetailViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qg3-jR-ju5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w85-80-K0d" userLabel="Content Web View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cAg-cg-nGG" firstAttribute="bottom" secondItem="w85-80-K0d" secondAttribute="bottom" id="HOo-EE-n3b"/>
+                            <constraint firstItem="w85-80-K0d" firstAttribute="leading" secondItem="cAg-cg-nGG" secondAttribute="leading" id="V5a-WJ-E7q"/>
+                            <constraint firstItem="w85-80-K0d" firstAttribute="top" secondItem="cAg-cg-nGG" secondAttribute="top" id="gio-GR-588"/>
+                            <constraint firstItem="w85-80-K0d" firstAttribute="trailing" secondItem="cAg-cg-nGG" secondAttribute="trailing" id="gqe-9w-sb1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cAg-cg-nGG"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentWebView" destination="w85-80-K0d" id="gZG-72-0t7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8PP-9C-cAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="613" y="-44"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QQ1-39-xf0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="b0i-Se-xoO">
+            <objects>
+                <navigationController id="QQ1-39-xf0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oHz-OR-2Xr">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pHf-pJ-gHd" kind="relationship" relationship="rootViewController" id="6Sa-X3-aFP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asy-Tc-Lb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1013" y="142"/>
+        </scene>
+        <!--Register New Service View Controller-->
+        <scene sceneID="IBm-q1-EPP">
+            <objects>
+                <viewController storyboardIdentifier="NCBRegisterNewServiceViewController" id="pHf-pJ-gHd" customClass="NCBRegisterNewServiceViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hbr-PG-zSA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nM6-hW-zQH">
+                                <rect key="frame" x="20" y="114" width="335" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="M80-Rk-goF"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gPF-qO-SYd">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fe7-Pt-jqI">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hen-Va-fdh">
+                                <rect key="frame" x="15" y="521.5" width="345" height="130.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Hen-Va-fdh" secondAttribute="height" multiplier="344:130" id="dIu-ZB-5GI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IgN-c7-9al" firstAttribute="trailing" secondItem="Hen-Va-fdh" secondAttribute="trailing" constant="15" id="4Db-w1-Lgt"/>
+                            <constraint firstItem="IgN-c7-9al" firstAttribute="trailing" secondItem="nM6-hW-zQH" secondAttribute="trailing" constant="20" id="CHd-Ju-IFs"/>
+                            <constraint firstItem="nM6-hW-zQH" firstAttribute="top" secondItem="IgN-c7-9al" secondAttribute="top" constant="50" id="SHr-sW-YZ1"/>
+                            <constraint firstItem="Hen-Va-fdh" firstAttribute="leading" secondItem="hbr-PG-zSA" secondAttribute="leading" constant="15" id="Tio-Zq-AlQ"/>
+                            <constraint firstItem="IgN-c7-9al" firstAttribute="bottom" secondItem="Hen-Va-fdh" secondAttribute="bottom" constant="15" id="sPc-Ng-tw9"/>
+                            <constraint firstItem="nM6-hW-zQH" firstAttribute="leading" secondItem="IgN-c7-9al" secondAttribute="leading" constant="20" id="y9r-8s-R6n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IgN-c7-9al"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Spy-oP-XS7"/>
+                    <connections>
+                        <outlet property="colView" destination="nM6-hW-zQH" id="SVU-wB-t86"/>
+                        <outlet property="containerSlideImageView" destination="Hen-Va-fdh" id="SyO-3r-W8U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wLN-9A-2xo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="141.67916041979012"/>
+        </scene>
+        <!--Register For Loan View Controller-->
+        <scene sceneID="2uF-bQ-gBI">
+            <objects>
+                <viewController storyboardIdentifier="NCBRegisterForLoanViewController" id="mXo-7C-zKt" customClass="NCBRegisterForLoanViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ujO-ww-ja2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rb9-Kz-Krx">
+                                <rect key="frame" x="0.0" y="20" width="375" height="567"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xU0-ed-pTn">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="476"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vf7-fg-a7J" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="25" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="JWz-55-Mi6"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zQA-N5-Una" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="75" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="u1j-xQ-J1C"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zko-gO-MJI" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="125" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="IfH-UN-uYj"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VfG-gi-yGr" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="175" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="mcv-rs-awg"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LIO-Zq-JNJ" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="225" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="wiA-8V-Wcv"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUN-r6-vKn">
+                                                <rect key="frame" x="25" y="290" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMt-mn-syD">
+                                                <rect key="frame" x="25" y="321" width="340" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="drj-2R-H62"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kUi-f8-1MM" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="366" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="B5Y-VO-SDm"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mET-ex-d7l" customClass="NCBIncomeTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="416" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="GRe-iG-WW5"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="sMt-mn-syD" firstAttribute="leading" secondItem="cUN-r6-vKn" secondAttribute="leading" id="0hr-Vd-okb"/>
+                                            <constraint firstAttribute="trailing" secondItem="sMt-mn-syD" secondAttribute="trailing" constant="10" id="16I-8T-vmD"/>
+                                            <constraint firstAttribute="bottom" secondItem="mET-ex-d7l" secondAttribute="bottom" constant="10" id="5Ld-Fb-9VD"/>
+                                            <constraint firstItem="LIO-Zq-JNJ" firstAttribute="leading" secondItem="VfG-gi-yGr" secondAttribute="leading" id="7lO-zb-5oh"/>
+                                            <constraint firstItem="zQA-N5-Una" firstAttribute="width" secondItem="vf7-fg-a7J" secondAttribute="width" id="9qY-ZN-Nzf"/>
+                                            <constraint firstItem="mET-ex-d7l" firstAttribute="width" secondItem="kUi-f8-1MM" secondAttribute="width" id="CpT-mb-sQm"/>
+                                            <constraint firstItem="zQA-N5-Una" firstAttribute="top" secondItem="vf7-fg-a7J" secondAttribute="bottom" id="E5o-TZ-rGs"/>
+                                            <constraint firstItem="LIO-Zq-JNJ" firstAttribute="top" secondItem="VfG-gi-yGr" secondAttribute="bottom" id="Ecj-oN-KRB"/>
+                                            <constraint firstItem="kUi-f8-1MM" firstAttribute="width" secondItem="LIO-Zq-JNJ" secondAttribute="width" id="HUQ-Q8-qQ2"/>
+                                            <constraint firstItem="vf7-fg-a7J" firstAttribute="top" secondItem="xU0-ed-pTn" secondAttribute="top" constant="25" id="Ih7-jO-ytb"/>
+                                            <constraint firstItem="VfG-gi-yGr" firstAttribute="top" secondItem="zko-gO-MJI" secondAttribute="bottom" id="KeG-hc-kfA"/>
+                                            <constraint firstItem="vf7-fg-a7J" firstAttribute="leading" secondItem="xU0-ed-pTn" secondAttribute="leading" constant="25" id="Miv-0t-OVP"/>
+                                            <constraint firstItem="zko-gO-MJI" firstAttribute="leading" secondItem="zQA-N5-Una" secondAttribute="leading" id="Nug-eV-eVe"/>
+                                            <constraint firstItem="VfG-gi-yGr" firstAttribute="leading" secondItem="zko-gO-MJI" secondAttribute="leading" id="Pof-LY-9wZ"/>
+                                            <constraint firstItem="cUN-r6-vKn" firstAttribute="leading" secondItem="LIO-Zq-JNJ" secondAttribute="leading" id="T0X-TD-FR5"/>
+                                            <constraint firstItem="VfG-gi-yGr" firstAttribute="width" secondItem="zko-gO-MJI" secondAttribute="width" id="VWx-Hr-Bx1"/>
+                                            <constraint firstItem="LIO-Zq-JNJ" firstAttribute="width" secondItem="VfG-gi-yGr" secondAttribute="width" id="Xrj-Z1-KGw"/>
+                                            <constraint firstItem="sMt-mn-syD" firstAttribute="top" secondItem="cUN-r6-vKn" secondAttribute="bottom" constant="10" id="Z1C-dv-7KA"/>
+                                            <constraint firstItem="zko-gO-MJI" firstAttribute="width" secondItem="zQA-N5-Una" secondAttribute="width" id="cP8-VK-SjE"/>
+                                            <constraint firstItem="kUi-f8-1MM" firstAttribute="leading" secondItem="LIO-Zq-JNJ" secondAttribute="leading" id="f22-oJ-Rte"/>
+                                            <constraint firstItem="mET-ex-d7l" firstAttribute="top" secondItem="kUi-f8-1MM" secondAttribute="bottom" id="g6U-3J-e36"/>
+                                            <constraint firstItem="kUi-f8-1MM" firstAttribute="top" secondItem="sMt-mn-syD" secondAttribute="bottom" constant="15" id="jk9-hn-3W5"/>
+                                            <constraint firstItem="zQA-N5-Una" firstAttribute="leading" secondItem="vf7-fg-a7J" secondAttribute="leading" id="mnS-93-ex6"/>
+                                            <constraint firstItem="cUN-r6-vKn" firstAttribute="top" secondItem="LIO-Zq-JNJ" secondAttribute="bottom" constant="15" id="rLL-00-ASB"/>
+                                            <constraint firstItem="mET-ex-d7l" firstAttribute="leading" secondItem="kUi-f8-1MM" secondAttribute="leading" id="sbj-2S-yxL"/>
+                                            <constraint firstAttribute="trailing" secondItem="vf7-fg-a7J" secondAttribute="trailing" constant="25" id="xOv-FR-mi8"/>
+                                            <constraint firstItem="zko-gO-MJI" firstAttribute="top" secondItem="zQA-N5-Una" secondAttribute="bottom" id="zuG-EU-Dmo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xU0-ed-pTn" firstAttribute="leading" secondItem="Rb9-Kz-Krx" secondAttribute="leading" id="2mJ-TJ-z8U"/>
+                                    <constraint firstItem="xU0-ed-pTn" firstAttribute="top" secondItem="Rb9-Kz-Krx" secondAttribute="top" id="FYf-Uu-eAR"/>
+                                    <constraint firstAttribute="trailing" secondItem="xU0-ed-pTn" secondAttribute="trailing" id="W93-gf-dA0"/>
+                                    <constraint firstAttribute="bottom" secondItem="xU0-ed-pTn" secondAttribute="bottom" id="p4O-fl-gai"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nT7-ah-QxY" customClass="NCBCommonButton" customModule="NCBApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="587" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XN7-uf-Wf1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nT7-ah-QxY" firstAttribute="top" secondItem="Rb9-Kz-Krx" secondAttribute="bottom" id="1M4-RM-Etl"/>
+                            <constraint firstItem="xU0-ed-pTn" firstAttribute="width" secondItem="ujO-ww-ja2" secondAttribute="width" id="LPY-cL-PQd"/>
+                            <constraint firstItem="Gb7-gH-ZJK" firstAttribute="trailing" secondItem="nT7-ah-QxY" secondAttribute="trailing" constant="16" id="LaE-32-qfR"/>
+                            <constraint firstItem="Gb7-gH-ZJK" firstAttribute="trailing" secondItem="Rb9-Kz-Krx" secondAttribute="trailing" id="Uu8-T6-eUw"/>
+                            <constraint firstItem="Rb9-Kz-Krx" firstAttribute="top" secondItem="Gb7-gH-ZJK" secondAttribute="top" id="VlV-Vj-wSD"/>
+                            <constraint firstItem="Gb7-gH-ZJK" firstAttribute="bottom" secondItem="nT7-ah-QxY" secondAttribute="bottom" constant="30" id="XOb-sX-k3C"/>
+                            <constraint firstItem="nT7-ah-QxY" firstAttribute="leading" secondItem="Gb7-gH-ZJK" secondAttribute="leading" constant="16" id="b7H-9d-j8v"/>
+                            <constraint firstItem="Rb9-Kz-Krx" firstAttribute="leading" secondItem="Gb7-gH-ZJK" secondAttribute="leading" id="c93-OQ-5al"/>
+                            <constraint firstItem="xU0-ed-pTn" firstAttribute="height" secondItem="ujO-ww-ja2" secondAttribute="height" priority="250" id="riC-dp-HHC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gb7-gH-ZJK"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerOptionView" destination="sMt-mn-syD" id="4ul-jG-F71"/>
+                        <outlet property="continueBtn" destination="nT7-ah-QxY" id="1nj-gb-LG8"/>
+                        <outlet property="lbForm" destination="cUN-r6-vKn" id="Kaj-sR-ILL"/>
+                        <outlet property="tfBank" destination="kUi-f8-1MM" id="Ytx-Hv-OJE"/>
+                        <outlet property="tfBranch" destination="VfG-gi-yGr" id="4dY-SG-x9E"/>
+                        <outlet property="tfCMT" destination="zQA-N5-Una" id="TrY-hy-zbP"/>
+                        <outlet property="tfIncome" destination="mET-ex-d7l" id="7w9-MQ-1TT"/>
+                        <outlet property="tfName" destination="vf7-fg-a7J" id="LMC-3A-GjO"/>
+                        <outlet property="tfPhone" destination="zko-gO-MJI" id="xPI-yu-DeJ"/>
+                        <outlet property="tfPurpose" destination="LIO-Zq-JNJ" id="Km6-nc-B6s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QkY-oO-vu1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760" y="136"/>
+        </scene>
+        <!--OpenIZI Account Step1 View Controller-->
+        <scene sceneID="HgP-WJ-vh0">
+            <objects>
+                <viewController storyboardIdentifier="NCBOpenIZIAccountStep1ViewController" id="9AK-8e-S6n" customClass="NCBOpenIZIAccountStep1ViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZQ3-B5-JOz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxz-ff-QlL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="506.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wH9-rV-SUG">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="165.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7sf-rn-j59" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="25" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="CbT-Wa-NOK"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1xB-o2-g2m" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="75" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ice-mf-Fua"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nt-tR-Hfb">
+                                                <rect key="frame" x="25" y="145" width="325" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="2nt-tR-Hfb" firstAttribute="top" secondItem="1xB-o2-g2m" secondAttribute="bottom" constant="20" id="4JG-WK-osu"/>
+                                            <constraint firstItem="1xB-o2-g2m" firstAttribute="top" secondItem="7sf-rn-j59" secondAttribute="bottom" id="Czg-t9-Y6M"/>
+                                            <constraint firstAttribute="bottom" secondItem="2nt-tR-Hfb" secondAttribute="bottom" id="MHh-zA-Xj3"/>
+                                            <constraint firstItem="7sf-rn-j59" firstAttribute="leading" secondItem="wH9-rV-SUG" secondAttribute="leading" constant="25" id="QKO-dt-glC"/>
+                                            <constraint firstItem="1xB-o2-g2m" firstAttribute="leading" secondItem="7sf-rn-j59" secondAttribute="leading" id="QUG-Nl-YhG"/>
+                                            <constraint firstItem="1xB-o2-g2m" firstAttribute="width" secondItem="7sf-rn-j59" secondAttribute="width" id="Tf0-6r-68b"/>
+                                            <constraint firstItem="7sf-rn-j59" firstAttribute="top" secondItem="wH9-rV-SUG" secondAttribute="top" constant="25" id="ZwI-89-xEa"/>
+                                            <constraint firstItem="2nt-tR-Hfb" firstAttribute="trailing" secondItem="1xB-o2-g2m" secondAttribute="trailing" id="fO5-z8-iNN"/>
+                                            <constraint firstAttribute="trailing" secondItem="7sf-rn-j59" secondAttribute="trailing" constant="25" id="i3f-DH-6eY"/>
+                                            <constraint firstItem="2nt-tR-Hfb" firstAttribute="leading" secondItem="1xB-o2-g2m" secondAttribute="leading" id="pDN-KS-HZX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="wH9-rV-SUG" secondAttribute="bottom" id="GYR-fP-H9G"/>
+                                    <constraint firstItem="wH9-rV-SUG" firstAttribute="leading" secondItem="bxz-ff-QlL" secondAttribute="leading" id="PnG-Vc-jZC"/>
+                                    <constraint firstAttribute="trailing" secondItem="wH9-rV-SUG" secondAttribute="trailing" id="l8a-mh-Umu"/>
+                                    <constraint firstItem="wH9-rV-SUG" firstAttribute="top" secondItem="bxz-ff-QlL" secondAttribute="top" id="n0G-61-H4e"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zs-8Y-AqS">
+                                <rect key="frame" x="25" y="546.5" width="19" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="19" id="5Gv-4a-2sJ"/>
+                                    <constraint firstAttribute="width" secondItem="4Zs-8Y-AqS" secondAttribute="height" multiplier="1:1" id="nZT-Wa-Hks"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="radio_uncheck"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a34-Xo-IU7">
+                                <rect key="frame" x="44" y="546.5" width="306" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcJ-nX-sDB" customClass="NCBCommonButton" customModule="NCBApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="587" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5Jh-by-1lu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bxz-ff-QlL" firstAttribute="leading" secondItem="l2D-CF-YrJ" secondAttribute="leading" id="2me-J7-En9"/>
+                            <constraint firstItem="l2D-CF-YrJ" firstAttribute="bottom" secondItem="qcJ-nX-sDB" secondAttribute="bottom" constant="30" id="AgC-PZ-qdV"/>
+                            <constraint firstItem="l2D-CF-YrJ" firstAttribute="trailing" secondItem="a34-Xo-IU7" secondAttribute="trailing" constant="25" id="CCe-4i-IsB"/>
+                            <constraint firstItem="wH9-rV-SUG" firstAttribute="width" secondItem="ZQ3-B5-JOz" secondAttribute="width" id="CLd-0K-w85"/>
+                            <constraint firstItem="qcJ-nX-sDB" firstAttribute="leading" secondItem="l2D-CF-YrJ" secondAttribute="leading" constant="16" id="Esk-u0-g6Q"/>
+                            <constraint firstItem="qcJ-nX-sDB" firstAttribute="top" secondItem="a34-Xo-IU7" secondAttribute="bottom" constant="20" id="GAZ-04-ObC"/>
+                            <constraint firstItem="a34-Xo-IU7" firstAttribute="leading" secondItem="4Zs-8Y-AqS" secondAttribute="trailing" id="JLH-Ow-z72"/>
+                            <constraint firstItem="4Zs-8Y-AqS" firstAttribute="leading" secondItem="l2D-CF-YrJ" secondAttribute="leading" constant="25" id="Q6O-CW-Knu"/>
+                            <constraint firstItem="bxz-ff-QlL" firstAttribute="top" secondItem="l2D-CF-YrJ" secondAttribute="top" id="QfN-8K-CGT"/>
+                            <constraint firstItem="l2D-CF-YrJ" firstAttribute="trailing" secondItem="qcJ-nX-sDB" secondAttribute="trailing" constant="16" id="R3j-Kc-8HQ"/>
+                            <constraint firstItem="4Zs-8Y-AqS" firstAttribute="top" secondItem="bxz-ff-QlL" secondAttribute="bottom" constant="20" id="XH2-B1-IMP"/>
+                            <constraint firstItem="a34-Xo-IU7" firstAttribute="top" secondItem="4Zs-8Y-AqS" secondAttribute="top" id="Ykb-Un-Wen"/>
+                            <constraint firstItem="l2D-CF-YrJ" firstAttribute="trailing" secondItem="bxz-ff-QlL" secondAttribute="trailing" id="nQd-qa-Nje"/>
+                            <constraint firstItem="wH9-rV-SUG" firstAttribute="height" secondItem="ZQ3-B5-JOz" secondAttribute="height" priority="250" id="ny6-w8-61Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l2D-CF-YrJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="continueBtn" destination="qcJ-nX-sDB" id="gR5-Yc-vep"/>
+                        <outlet property="lbNote" destination="2nt-tR-Hfb" id="Fks-yS-Aix"/>
+                        <outlet property="lbTerms" destination="a34-Xo-IU7" id="ng1-cK-Mbc"/>
+                        <outlet property="radioCheckBtn" destination="4Zs-8Y-AqS" id="2d4-Fn-MYc"/>
+                        <outlet property="tfCMT" destination="1xB-o2-g2m" id="OCV-B2-6M4"/>
+                        <outlet property="tfName" destination="7sf-rn-j59" id="iUa-ac-R7e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TwN-bo-QjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1511" y="135"/>
+        </scene>
+        <!--Register Credit Card View Controller-->
+        <scene sceneID="OPK-Yx-cu5">
+            <objects>
+                <viewController storyboardIdentifier="NCBRegisterCreditCardViewController" id="zSX-8C-oAG" customClass="NCBRegisterCreditCardViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vuD-dS-1vL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFx-LX-AIL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="567"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOy-Dd-KFk">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="576"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b2d-pQ-9uc" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="25" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="mUa-T9-Lcq"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tcL-vc-NdX" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="75" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ang-Pw-bII"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUv-Wm-p1m" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="125" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Flj-wW-VWX"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sL-W6-2GF" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="175" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="zTh-Gz-sMK"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XWa-WV-eOg" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="225" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="dli-rf-2O8"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fF5-a5-OZH">
+                                                <rect key="frame" x="25" y="290" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1WL-Gr-NdT">
+                                                <rect key="frame" x="25" y="321" width="340" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j61-ZG-f8a" customClass="NCBRadioButton" customModule="NCBApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="54" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="yTO-9T-Elk"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbO-HG-0mg" customClass="NCBRadioButton" customModule="NCBApp" customModuleProvider="target">
+                                                        <rect key="frame" x="74" y="0.0" width="54" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="Zw2-gD-5az"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="00d-0n-nZV"/>
+                                                    <constraint firstItem="j61-ZG-f8a" firstAttribute="centerY" secondItem="1WL-Gr-NdT" secondAttribute="centerY" id="HoS-HT-fay"/>
+                                                    <constraint firstItem="j61-ZG-f8a" firstAttribute="leading" secondItem="1WL-Gr-NdT" secondAttribute="leading" id="J1p-uU-OKf"/>
+                                                    <constraint firstItem="sbO-HG-0mg" firstAttribute="leading" secondItem="j61-ZG-f8a" secondAttribute="trailing" constant="20" id="MRD-JD-Ao5"/>
+                                                    <constraint firstItem="sbO-HG-0mg" firstAttribute="top" secondItem="j61-ZG-f8a" secondAttribute="top" id="hGl-9e-ZTj"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G9R-g1-mxH" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="366" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Y1t-7z-x8h"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iEr-mF-Eye" customClass="NCBIncomeTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="416" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="wBC-bJ-S0i"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y4x-6q-tFE" customClass="NCBIncomeTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="466" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="pix-9c-5Sq"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f7a-Zz-UZt" customClass="NCBIncomeTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="516" width="325" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="WeV-7m-S4W"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="f7a-Zz-UZt" secondAttribute="bottom" constant="10" id="0cW-y2-W2U"/>
+                                            <constraint firstItem="iUv-Wm-p1m" firstAttribute="top" secondItem="tcL-vc-NdX" secondAttribute="bottom" id="0ll-Le-gqv"/>
+                                            <constraint firstItem="iEr-mF-Eye" firstAttribute="width" secondItem="G9R-g1-mxH" secondAttribute="width" id="2je-Lb-dMp"/>
+                                            <constraint firstItem="4sL-W6-2GF" firstAttribute="leading" secondItem="iUv-Wm-p1m" secondAttribute="leading" id="40g-H2-Una"/>
+                                            <constraint firstItem="iEr-mF-Eye" firstAttribute="leading" secondItem="G9R-g1-mxH" secondAttribute="leading" id="6Ga-4Y-S5A"/>
+                                            <constraint firstItem="G9R-g1-mxH" firstAttribute="top" secondItem="1WL-Gr-NdT" secondAttribute="bottom" constant="15" id="6I6-0b-saz"/>
+                                            <constraint firstItem="b2d-pQ-9uc" firstAttribute="top" secondItem="oOy-Dd-KFk" secondAttribute="top" constant="25" id="Ame-HW-IDH"/>
+                                            <constraint firstItem="iEr-mF-Eye" firstAttribute="top" secondItem="G9R-g1-mxH" secondAttribute="bottom" id="BNE-KK-Dad"/>
+                                            <constraint firstItem="4sL-W6-2GF" firstAttribute="top" secondItem="iUv-Wm-p1m" secondAttribute="bottom" id="BrB-Ui-E21"/>
+                                            <constraint firstItem="y4x-6q-tFE" firstAttribute="width" secondItem="iEr-mF-Eye" secondAttribute="width" id="HIC-DF-vW1"/>
+                                            <constraint firstItem="4sL-W6-2GF" firstAttribute="width" secondItem="iUv-Wm-p1m" secondAttribute="width" id="J1G-a1-0eP"/>
+                                            <constraint firstAttribute="trailing" secondItem="b2d-pQ-9uc" secondAttribute="trailing" constant="25" id="KWL-Hw-Tcl"/>
+                                            <constraint firstItem="XWa-WV-eOg" firstAttribute="leading" secondItem="4sL-W6-2GF" secondAttribute="leading" id="LAt-Zg-g7J"/>
+                                            <constraint firstItem="f7a-Zz-UZt" firstAttribute="top" secondItem="y4x-6q-tFE" secondAttribute="bottom" id="OgK-go-vPN"/>
+                                            <constraint firstItem="tcL-vc-NdX" firstAttribute="width" secondItem="b2d-pQ-9uc" secondAttribute="width" id="SKY-gB-eSC"/>
+                                            <constraint firstItem="iUv-Wm-p1m" firstAttribute="width" secondItem="tcL-vc-NdX" secondAttribute="width" id="VMt-Hu-2oY"/>
+                                            <constraint firstItem="fF5-a5-OZH" firstAttribute="top" secondItem="XWa-WV-eOg" secondAttribute="bottom" constant="15" id="WhZ-Q6-KGA"/>
+                                            <constraint firstItem="1WL-Gr-NdT" firstAttribute="top" secondItem="fF5-a5-OZH" secondAttribute="bottom" constant="10" id="bII-J1-dfi"/>
+                                            <constraint firstItem="1WL-Gr-NdT" firstAttribute="leading" secondItem="fF5-a5-OZH" secondAttribute="leading" id="dMS-hw-w3z"/>
+                                            <constraint firstItem="XWa-WV-eOg" firstAttribute="width" secondItem="4sL-W6-2GF" secondAttribute="width" id="e2C-le-pAg"/>
+                                            <constraint firstItem="y4x-6q-tFE" firstAttribute="leading" secondItem="iEr-mF-Eye" secondAttribute="leading" id="gkf-2E-hmW"/>
+                                            <constraint firstAttribute="trailing" secondItem="1WL-Gr-NdT" secondAttribute="trailing" constant="10" id="ht9-2M-5Ud"/>
+                                            <constraint firstItem="y4x-6q-tFE" firstAttribute="top" secondItem="iEr-mF-Eye" secondAttribute="bottom" id="i5v-lo-2te"/>
+                                            <constraint firstItem="G9R-g1-mxH" firstAttribute="width" secondItem="XWa-WV-eOg" secondAttribute="width" id="mkb-5d-f95"/>
+                                            <constraint firstItem="XWa-WV-eOg" firstAttribute="top" secondItem="4sL-W6-2GF" secondAttribute="bottom" id="nrQ-eY-Zaj"/>
+                                            <constraint firstItem="tcL-vc-NdX" firstAttribute="top" secondItem="b2d-pQ-9uc" secondAttribute="bottom" id="p0l-Fo-yA3"/>
+                                            <constraint firstItem="b2d-pQ-9uc" firstAttribute="leading" secondItem="oOy-Dd-KFk" secondAttribute="leading" constant="25" id="puX-WO-5t2"/>
+                                            <constraint firstItem="iUv-Wm-p1m" firstAttribute="leading" secondItem="tcL-vc-NdX" secondAttribute="leading" id="qqe-ty-wSN"/>
+                                            <constraint firstItem="fF5-a5-OZH" firstAttribute="leading" secondItem="XWa-WV-eOg" secondAttribute="leading" id="sxB-at-nso"/>
+                                            <constraint firstItem="f7a-Zz-UZt" firstAttribute="width" secondItem="y4x-6q-tFE" secondAttribute="width" id="u4f-fg-3Qw"/>
+                                            <constraint firstItem="G9R-g1-mxH" firstAttribute="leading" secondItem="XWa-WV-eOg" secondAttribute="leading" id="vqH-jO-DQa"/>
+                                            <constraint firstItem="f7a-Zz-UZt" firstAttribute="leading" secondItem="y4x-6q-tFE" secondAttribute="leading" id="w5j-mg-kRD"/>
+                                            <constraint firstItem="tcL-vc-NdX" firstAttribute="leading" secondItem="b2d-pQ-9uc" secondAttribute="leading" id="yFb-ns-3uL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="oOy-Dd-KFk" secondAttribute="bottom" id="1qI-e1-rig"/>
+                                    <constraint firstItem="oOy-Dd-KFk" firstAttribute="top" secondItem="ZFx-LX-AIL" secondAttribute="top" id="OkG-a4-sZK"/>
+                                    <constraint firstItem="oOy-Dd-KFk" firstAttribute="leading" secondItem="ZFx-LX-AIL" secondAttribute="leading" id="Q5z-Le-CVw"/>
+                                    <constraint firstAttribute="trailing" secondItem="oOy-Dd-KFk" secondAttribute="trailing" id="Zux-tA-X8K"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxC-mH-Jhk" customClass="NCBCommonButton" customModule="NCBApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="587" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="euF-Cj-zL2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oOy-Dd-KFk" firstAttribute="width" secondItem="vuD-dS-1vL" secondAttribute="width" id="07d-WB-R36"/>
+                            <constraint firstItem="ftW-k9-bxr" firstAttribute="trailing" secondItem="sxC-mH-Jhk" secondAttribute="trailing" constant="16" id="AGY-sN-9gw"/>
+                            <constraint firstItem="ZFx-LX-AIL" firstAttribute="leading" secondItem="ftW-k9-bxr" secondAttribute="leading" id="Uag-4S-2sI"/>
+                            <constraint firstItem="sxC-mH-Jhk" firstAttribute="top" secondItem="ZFx-LX-AIL" secondAttribute="bottom" id="cRg-bK-cGV"/>
+                            <constraint firstItem="ftW-k9-bxr" firstAttribute="trailing" secondItem="ZFx-LX-AIL" secondAttribute="trailing" id="oAL-mz-qRL"/>
+                            <constraint firstItem="ftW-k9-bxr" firstAttribute="bottom" secondItem="sxC-mH-Jhk" secondAttribute="bottom" constant="30" id="pVH-mA-bd3"/>
+                            <constraint firstItem="oOy-Dd-KFk" firstAttribute="height" secondItem="vuD-dS-1vL" secondAttribute="height" priority="250" id="qgB-VZ-vIN"/>
+                            <constraint firstItem="sxC-mH-Jhk" firstAttribute="leading" secondItem="ftW-k9-bxr" secondAttribute="leading" constant="16" id="wkm-Yk-kjA"/>
+                            <constraint firstItem="ZFx-LX-AIL" firstAttribute="top" secondItem="ftW-k9-bxr" secondAttribute="top" id="zLu-vN-UGg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ftW-k9-bxr"/>
+                    </view>
+                    <connections>
+                        <outlet property="cashFormBtn" destination="j61-ZG-f8a" id="Me1-hv-aYB"/>
+                        <outlet property="continueBtn" destination="sxC-mH-Jhk" id="xHD-kd-lcJ"/>
+                        <outlet property="lbForm" destination="fF5-a5-OZH" id="3eo-8l-gqG"/>
+                        <outlet property="tfBank" destination="G9R-g1-mxH" id="WNe-QH-gog"/>
+                        <outlet property="tfBranch" destination="4sL-W6-2GF" id="o9e-cr-IFA"/>
+                        <outlet property="tfCMT" destination="tcL-vc-NdX" id="ltT-2G-Gl0"/>
+                        <outlet property="tfCost" destination="y4x-6q-tFE" id="OdW-jx-czs"/>
+                        <outlet property="tfIncome" destination="iEr-mF-Eye" id="eFB-BE-Mae"/>
+                        <outlet property="tfLimit" destination="f7a-Zz-UZt" id="mz8-IE-C4g"/>
+                        <outlet property="tfName" destination="b2d-pQ-9uc" id="nlD-lH-avz"/>
+                        <outlet property="tfPhone" destination="iUv-Wm-p1m" id="8bk-hY-i79"/>
+                        <outlet property="tfProduct" destination="XWa-WV-eOg" id="AxT-u0-CtR"/>
+                        <outlet property="transferFormBtn" destination="sbO-HG-0mg" id="duv-0b-h0d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OjS-ZA-2je" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2289" y="135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="radio_uncheck" width="27" height="27"/>
+    </resources>
+</document>

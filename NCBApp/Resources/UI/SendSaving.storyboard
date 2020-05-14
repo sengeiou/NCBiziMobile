@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bottom Sheet Detail List View Controller-->
+        <scene sceneID="78F-an-YBM">
+            <objects>
+                <viewController storyboardIdentifier="NCBBottomSheetDetailListViewController" id="b4h-ZY-APe" userLabel="Bottom Sheet Detail List View Controller" customClass="NCBBottomSheetDetailListViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pny-GL-0aU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCH-zz-sm5" userLabel="Title Lbl">
+                                <rect key="frame" x="20" y="35" width="280" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="vla-gw-Teq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j0M-s1-Ulb" userLabel="Line View">
+                                <rect key="frame" x="20" y="70" width="280" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="3tD-id-7PP"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vf2-YH-tly" userLabel="Sheet Tbv">
+                                <rect key="frame" x="20" y="71" width="280" height="497"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9PC-HL-FHU" firstAttribute="trailing" secondItem="vf2-YH-tly" secondAttribute="trailing" constant="20" id="3DU-Te-rtg"/>
+                            <constraint firstItem="kCH-zz-sm5" firstAttribute="leading" secondItem="9PC-HL-FHU" secondAttribute="leading" constant="20" id="OKP-ts-vGP"/>
+                            <constraint firstItem="vf2-YH-tly" firstAttribute="leading" secondItem="9PC-HL-FHU" secondAttribute="leading" constant="20" id="PnN-8Y-Lwp"/>
+                            <constraint firstItem="9PC-HL-FHU" firstAttribute="trailing" secondItem="j0M-s1-Ulb" secondAttribute="trailing" constant="20" id="cne-rs-VQ9"/>
+                            <constraint firstItem="vf2-YH-tly" firstAttribute="top" secondItem="j0M-s1-Ulb" secondAttribute="bottom" id="hUq-Fh-Y5u"/>
+                            <constraint firstItem="9PC-HL-FHU" firstAttribute="bottom" secondItem="vf2-YH-tly" secondAttribute="bottom" id="iB5-4M-uqz"/>
+                            <constraint firstItem="9PC-HL-FHU" firstAttribute="trailing" secondItem="kCH-zz-sm5" secondAttribute="trailing" constant="20" id="lwW-jU-gCw"/>
+                            <constraint firstItem="j0M-s1-Ulb" firstAttribute="leading" secondItem="9PC-HL-FHU" secondAttribute="leading" constant="20" id="mJu-db-9id"/>
+                            <constraint firstItem="kCH-zz-sm5" firstAttribute="top" secondItem="9PC-HL-FHU" secondAttribute="top" constant="15" id="oLR-yA-Pxh"/>
+                            <constraint firstItem="j0M-s1-Ulb" firstAttribute="top" secondItem="kCH-zz-sm5" secondAttribute="bottom" constant="15" id="xew-XI-Pmw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9PC-HL-FHU"/>
+                    </view>
+                    <connections>
+                        <outlet property="lineView" destination="j0M-s1-Ulb" id="MBY-ah-dvO"/>
+                        <outlet property="sheetTbv" destination="vf2-YH-tly" id="COS-aH-a2E"/>
+                        <outlet property="titleLbl" destination="kCH-zz-sm5" id="NB8-Gz-NRY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f3g-YL-VLf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-158" y="99"/>
+        </scene>
+        <!--I Savings View Controller-->
+        <scene sceneID="Iua-hi-IAn">
+            <objects>
+                <viewController storyboardIdentifier="NCBISavingsViewController" id="7pY-8g-6cE" userLabel="I Savings View Controller" customClass="NCBISavingsViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rok-Dz-8Hv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z0R-5f-EGg">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIB-v3-5xm" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngA-i1-j8T" userLabel="Source View">
+                                                <rect key="frame" x="20" y="20" width="280" height="85"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="85" id="ZE5-zg-Xas"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eta-rR-SjR" userLabel="Deposits View" customClass="NCBTransferAmountView" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="105" width="280" height="61"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="61" id="CnW-X9-kIi"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eh0-94-CKo" userLabel="Send Schedule View" customClass="NCBTermDepView" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="166" width="280" height="61"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="61" id="80L-MS-WS5"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="yYT-cR-GNx" appends="YES" id="zD4-Mk-yF4"/>
+                                                </connections>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ooe-zN-oGK" userLabel="Term Interest Tf" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="227" width="280" height="61"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="61" id="c7J-if-Ku4"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="91p-42-s9h" userLabel="To Mature Form Tf" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="288" width="280" height="61"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="61" id="GIB-sf-Fm5"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f5c-P0-9hK" userLabel="Dentitled Account Tf" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="349" width="280" height="61"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="61" id="EJq-87-9hp"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thC-P9-zyo" userLabel="Continue Btn" customClass="NCBCommonButton" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="430" width="288" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="gkp-SQ-fmb"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="contiue:" destination="7pY-8g-6cE" eventType="touchUpInside" id="cbR-V3-3KM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="thC-P9-zyo" secondAttribute="trailing" constant="16" id="05f-Cd-JLj"/>
+                                            <constraint firstItem="thC-P9-zyo" firstAttribute="leading" secondItem="cIB-v3-5xm" secondAttribute="leading" constant="16" id="4lk-CN-dtz"/>
+                                            <constraint firstAttribute="trailing" secondItem="ngA-i1-j8T" secondAttribute="trailing" constant="20" id="61e-SA-xAe"/>
+                                            <constraint firstAttribute="trailing" secondItem="Eta-rR-SjR" secondAttribute="trailing" constant="20" id="Aka-br-7ZO"/>
+                                            <constraint firstItem="eh0-94-CKo" firstAttribute="top" secondItem="Eta-rR-SjR" secondAttribute="bottom" id="BFn-qV-cVI"/>
+                                            <constraint firstAttribute="trailing" secondItem="f5c-P0-9hK" secondAttribute="trailing" constant="20" id="E1m-69-IbT"/>
+                                            <constraint firstItem="Eta-rR-SjR" firstAttribute="top" secondItem="ngA-i1-j8T" secondAttribute="bottom" id="MwF-Vb-ogv"/>
+                                            <constraint firstItem="f5c-P0-9hK" firstAttribute="leading" secondItem="cIB-v3-5xm" secondAttribute="leading" constant="20" id="Pch-Tv-gdW"/>
+                                            <constraint firstAttribute="bottom" secondItem="thC-P9-zyo" secondAttribute="bottom" id="SX5-Et-xss"/>
+                                            <constraint firstAttribute="trailing" secondItem="eh0-94-CKo" secondAttribute="trailing" constant="20" id="So4-Tb-DXB"/>
+                                            <constraint firstItem="ooe-zN-oGK" firstAttribute="top" secondItem="eh0-94-CKo" secondAttribute="bottom" id="Te8-kj-sYU"/>
+                                            <constraint firstAttribute="trailing" secondItem="91p-42-s9h" secondAttribute="trailing" constant="20" id="VsW-qa-aU1"/>
+                                            <constraint firstItem="ngA-i1-j8T" firstAttribute="top" secondItem="cIB-v3-5xm" secondAttribute="top" constant="20" id="ciH-fH-QIs"/>
+                                            <constraint firstItem="ooe-zN-oGK" firstAttribute="leading" secondItem="cIB-v3-5xm" secondAttribute="leading" constant="20" id="fFS-eh-RRf"/>
+                                            <constraint firstItem="f5c-P0-9hK" firstAttribute="top" secondItem="91p-42-s9h" secondAttribute="bottom" id="fSb-Ae-7Mp"/>
+                                            <constraint firstItem="91p-42-s9h" firstAttribute="top" secondItem="ooe-zN-oGK" secondAttribute="bottom" id="mZj-7G-XwF"/>
+                                            <constraint firstItem="91p-42-s9h" firstAttribute="leading" secondItem="cIB-v3-5xm" secondAttribute="leading" constant="20" id="oTF-Do-Ztv"/>
+                                            <constraint firstItem="thC-P9-zyo" firstAttribute="top" secondItem="f5c-P0-9hK" secondAttribute="bottom" constant="20" id="qlK-pr-EEp"/>
+                                            <constraint firstItem="ngA-i1-j8T" firstAttribute="leading" secondItem="cIB-v3-5xm" secondAttribute="leading" constant="20" id="rC0-va-ttw"/>
+                                            <constraint firstItem="Eta-rR-SjR" firstAttribute="leading" secondItem="cIB-v3-5xm" secondAttribute="leading" constant="20" id="w7y-vy-0c5"/>
+                                            <constraint firstAttribute="trailing" secondItem="ooe-zN-oGK" secondAttribute="trailing" constant="20" id="xV9-cc-WCl"/>
+                                            <constraint firstAttribute="bottom" secondItem="thC-P9-zyo" secondAttribute="bottom" id="ywf-dE-6Rr"/>
+                                            <constraint firstItem="eh0-94-CKo" firstAttribute="leading" secondItem="cIB-v3-5xm" secondAttribute="leading" constant="20" id="z7I-AJ-y6x"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cIB-v3-5xm" firstAttribute="width" secondItem="Z0R-5f-EGg" secondAttribute="width" id="FX2-EI-gTe"/>
+                                    <constraint firstAttribute="bottom" secondItem="cIB-v3-5xm" secondAttribute="bottom" id="TdW-Gc-sR7"/>
+                                    <constraint firstAttribute="trailing" secondItem="cIB-v3-5xm" secondAttribute="trailing" id="a2s-Qs-cnY"/>
+                                    <constraint firstItem="cIB-v3-5xm" firstAttribute="leading" secondItem="Z0R-5f-EGg" secondAttribute="leading" id="jx5-zz-99x"/>
+                                    <constraint firstItem="cIB-v3-5xm" firstAttribute="top" secondItem="Z0R-5f-EGg" secondAttribute="top" id="qpG-gr-zq8"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="cIB-v3-5xm" firstAttribute="height" secondItem="rok-Dz-8Hv" secondAttribute="height" priority="250" id="56M-Pa-3uw"/>
+                            <constraint firstItem="7xI-Ex-Ock" firstAttribute="trailing" secondItem="Z0R-5f-EGg" secondAttribute="trailing" id="CQ9-dD-U7x"/>
+                            <constraint firstItem="Z0R-5f-EGg" firstAttribute="top" secondItem="7xI-Ex-Ock" secondAttribute="top" id="JnN-7E-Fu9"/>
+                            <constraint firstItem="Z0R-5f-EGg" firstAttribute="leading" secondItem="7xI-Ex-Ock" secondAttribute="leading" id="P4d-hs-I79"/>
+                            <constraint firstItem="cIB-v3-5xm" firstAttribute="height" secondItem="rok-Dz-8Hv" secondAttribute="height" priority="250" id="j9V-9a-G0l"/>
+                            <constraint firstItem="7xI-Ex-Ock" firstAttribute="bottom" secondItem="Z0R-5f-EGg" secondAttribute="bottom" id="syJ-9L-co1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7xI-Ex-Ock"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerSourceView" destination="ngA-i1-j8T" id="009-4Y-MnN"/>
+                        <outlet property="continueBtn" destination="thC-P9-zyo" id="hDB-Z3-aLv"/>
+                        <outlet property="depositsView" destination="Eta-rR-SjR" id="pje-ZD-2YD"/>
+                        <outlet property="destinationAccountsTf" destination="f5c-P0-9hK" id="jvl-RJ-jNT"/>
+                        <outlet property="sendScheduleView" destination="eh0-94-CKo" id="zaR-Ap-mmO"/>
+                        <outlet property="termInterestConstraint" destination="c7J-if-Ku4" id="pdn-Tj-NTh"/>
+                        <outlet property="termInterestTf" destination="ooe-zN-oGK" id="uvR-ha-TCr"/>
+                        <outlet property="toMatureFormTf" destination="91p-42-s9h" id="BS0-7q-RI3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x6E-zi-Tge" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yYT-cR-GNx">
+                    <connections>
+                        <action selector="termDeposit:" destination="7pY-8g-6cE" id="chk-Cm-qo7"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="475" y="99"/>
+        </scene>
+        <!--Verify Saving Account View Controller-->
+        <scene sceneID="9Wb-x3-Snx">
+            <objects>
+                <viewController storyboardIdentifier="NCBVerifySavingAccountViewController" id="B0G-te-Z5A" userLabel="Verify Saving Account View Controller" customClass="NCBVerifySavingAccountViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="10Y-As-qHG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uEl-s6-n1p"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HId-P2-wKz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1232" y="87"/>
+        </scene>
+        <!--Saving Account Successful View Controller-->
+        <scene sceneID="hqp-nH-xd1">
+            <objects>
+                <viewController storyboardIdentifier="NCBSavingAccountSuccessfulViewController" id="VTg-gT-hhR" userLabel="Saving Account Successful View Controller" customClass="NCBSavingAccountSuccessfulViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oiJ-hj-6I0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Mst-Wj-zMg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="umm-2U-FKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1929" y="86"/>
+        </scene>
+    </scenes>
+</document>

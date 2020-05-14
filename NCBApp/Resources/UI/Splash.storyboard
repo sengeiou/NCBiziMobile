@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l28-Is-ajD">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Light.otf">
+            <string>SFProText-Light</string>
+        </array>
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="ihU-Yb-8If">
+            <objects>
+                <viewController storyboardIdentifier="NCBSplashScreenViewController" id="l28-Is-ajD" customClass="NCBSplashScreenViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dbV-Pu-My3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_bg" translatesAutoresizingMaskIntoConstraints="NO" id="h0A-Gm-sks">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="G15-VG-P4d">
+                                <rect key="frame" x="107.5" y="419.5" width="199" height="57"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="G15-VG-P4d" firstAttribute="centerX" secondItem="dbV-Pu-My3" secondAttribute="centerX" id="80T-Qq-sIv"/>
+                            <constraint firstItem="h0A-Gm-sks" firstAttribute="leading" secondItem="5Hb-xf-BfP" secondAttribute="leading" id="AHI-tu-2Aj"/>
+                            <constraint firstItem="h0A-Gm-sks" firstAttribute="trailing" secondItem="5Hb-xf-BfP" secondAttribute="trailing" id="CcP-1U-aSV"/>
+                            <constraint firstItem="h0A-Gm-sks" firstAttribute="top" secondItem="dbV-Pu-My3" secondAttribute="top" id="WOI-CB-Brw"/>
+                            <constraint firstItem="G15-VG-P4d" firstAttribute="centerY" secondItem="dbV-Pu-My3" secondAttribute="centerY" id="pHJ-Ub-Wem"/>
+                            <constraint firstAttribute="bottom" secondItem="h0A-Gm-sks" secondAttribute="bottom" id="qQG-rq-0ab"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Hb-xf-BfP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="G97-g0-NhU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="swQ-Kn-pWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1157" y="-159"/>
+        </scene>
+        <!--Active Service View Controller-->
+        <scene sceneID="LlM-Qi-kFC">
+            <objects>
+                <viewController storyboardIdentifier="NCBActiveServiceViewController" id="pbA-vp-iWP" customClass="NCBActiveServiceViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BG3-bs-S9K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_bg" translatesAutoresizingMaskIntoConstraints="NO" id="9ay-Aw-Md6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="YlW-Ya-4AL">
+                                <rect key="frame" x="141" y="92" width="132" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YlW-Ya-4AL" secondAttribute="height" multiplier="119:36" id="mCy-wG-DbY"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26g-rv-PnV" customClass="NCBCommonButton" customModule="NCBApp" customModuleProvider="target">
+                                <rect key="frame" x="54" y="423" width="306" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.20784313725490194" blue="0.62352941176470589" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="l7u-8L-IPX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                <state key="normal" title="Tôi là khách hàng NCB">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="hasActiveAccount:" destination="pbA-vp-iWP" eventType="touchUpInside" id="b26-HP-Zss"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn đã là khách hàng của NCB?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8I-D4-8LZ">
+                                <rect key="frame" x="54" y="346" width="306" height="53"/>
+                                <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZq-fV-W0A">
+                                <rect key="frame" x="38" y="814" width="50" height="24"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiA-Cr-NLR">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="24"/>
+                                        <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="12"/>
+                                        <state key="normal" title="VI">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onVI:" destination="pbA-vp-iWP" eventType="touchUpInside" id="YkO-Ds-0ee"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPE-np-cVD">
+                                        <rect key="frame" x="25" y="0.0" width="25" height="24"/>
+                                        <fontDescription key="fontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="12"/>
+                                        <state key="normal" title="EN">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onEN:" destination="pbA-vp-iWP" eventType="touchUpInside" id="yQc-aP-bWj"/>
+                                        </connections>
+                                    </button>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZy-tB-UwY">
+                                        <rect key="frame" x="25" y="8" width="0.5" height="8"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="0.5" id="svt-zu-7ua"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bZy-tB-UwY" secondAttribute="bottom" constant="8" id="0IC-uh-3gT"/>
+                                    <constraint firstItem="bZy-tB-UwY" firstAttribute="top" secondItem="CZq-fV-W0A" secondAttribute="top" constant="8" id="7ag-fg-0u7"/>
+                                    <constraint firstItem="tiA-Cr-NLR" firstAttribute="leading" secondItem="CZq-fV-W0A" secondAttribute="leading" id="O5k-46-C1q"/>
+                                    <constraint firstAttribute="bottom" secondItem="tiA-Cr-NLR" secondAttribute="bottom" id="UsG-5o-all"/>
+                                    <constraint firstAttribute="width" constant="50" id="Wdt-HD-mNt"/>
+                                    <constraint firstItem="vPE-np-cVD" firstAttribute="top" secondItem="CZq-fV-W0A" secondAttribute="top" id="Yni-pq-Keo"/>
+                                    <constraint firstItem="tiA-Cr-NLR" firstAttribute="width" secondItem="CZq-fV-W0A" secondAttribute="width" multiplier="1/2" id="hFz-32-gEF"/>
+                                    <constraint firstAttribute="height" constant="24" id="iwF-7H-whU"/>
+                                    <constraint firstItem="bZy-tB-UwY" firstAttribute="centerX" secondItem="CZq-fV-W0A" secondAttribute="centerX" id="jKm-e8-Nmj"/>
+                                    <constraint firstItem="vPE-np-cVD" firstAttribute="width" secondItem="CZq-fV-W0A" secondAttribute="width" multiplier="1/2" id="lTZ-op-PRf"/>
+                                    <constraint firstAttribute="trailing" secondItem="vPE-np-cVD" secondAttribute="trailing" id="rgm-kq-Sr2"/>
+                                    <constraint firstAttribute="bottom" secondItem="vPE-np-cVD" secondAttribute="bottom" id="tmt-0s-hhS"/>
+                                    <constraint firstItem="tiA-Cr-NLR" firstAttribute="top" secondItem="CZq-fV-W0A" secondAttribute="top" id="wT6-bb-j6a"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgA-8a-PBK" customClass="NCBCommonButton" customModule="NCBApp" customModuleProvider="target">
+                                <rect key="frame" x="54" y="483" width="306" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.20784313730000001" blue="0.62352941179999999" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ekp-Gb-VpF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                <state key="normal" title="Tôi là khách hàng NCB">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dontHaveActiveAccount:" destination="pbA-vp-iWP" eventType="touchUpInside" id="Gt2-Et-m7M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="26g-rv-PnV" firstAttribute="leading" secondItem="loc-A5-B6N" secondAttribute="leading" constant="54" id="01R-df-F4q"/>
+                            <constraint firstItem="26g-rv-PnV" firstAttribute="centerY" secondItem="BG3-bs-S9K" secondAttribute="centerY" id="1EB-5e-Jdr"/>
+                            <constraint firstItem="9ay-Aw-Md6" firstAttribute="leading" secondItem="loc-A5-B6N" secondAttribute="leading" id="Bme-bA-ul2"/>
+                            <constraint firstItem="9ay-Aw-Md6" firstAttribute="trailing" secondItem="loc-A5-B6N" secondAttribute="trailing" id="KjE-Da-LWM"/>
+                            <constraint firstItem="hgA-8a-PBK" firstAttribute="width" secondItem="26g-rv-PnV" secondAttribute="width" id="MTG-AP-6kp"/>
+                            <constraint firstItem="r8I-D4-8LZ" firstAttribute="leading" secondItem="loc-A5-B6N" secondAttribute="leading" constant="54" id="NZh-EB-sDd"/>
+                            <constraint firstItem="CZq-fV-W0A" firstAttribute="leading" secondItem="loc-A5-B6N" secondAttribute="leading" constant="38" id="WzZ-Uk-Svs"/>
+                            <constraint firstItem="26g-rv-PnV" firstAttribute="top" secondItem="r8I-D4-8LZ" secondAttribute="bottom" constant="24" id="YOs-au-gA5"/>
+                            <constraint firstItem="9ay-Aw-Md6" firstAttribute="top" secondItem="BG3-bs-S9K" secondAttribute="top" id="Z9a-2L-L9f"/>
+                            <constraint firstItem="YlW-Ya-4AL" firstAttribute="centerX" secondItem="BG3-bs-S9K" secondAttribute="centerX" id="erB-sQ-KF4"/>
+                            <constraint firstItem="loc-A5-B6N" firstAttribute="trailing" secondItem="26g-rv-PnV" secondAttribute="trailing" constant="54" id="kzW-rl-S57"/>
+                            <constraint firstAttribute="bottom" secondItem="9ay-Aw-Md6" secondAttribute="bottom" id="mmL-3Y-wp9"/>
+                            <constraint firstItem="loc-A5-B6N" firstAttribute="trailing" secondItem="r8I-D4-8LZ" secondAttribute="trailing" constant="54" id="nTl-Sc-TH9"/>
+                            <constraint firstItem="hgA-8a-PBK" firstAttribute="leading" secondItem="26g-rv-PnV" secondAttribute="leading" id="pFc-ss-VNa"/>
+                            <constraint firstItem="YlW-Ya-4AL" firstAttribute="width" secondItem="BG3-bs-S9K" secondAttribute="width" multiplier="120:375" id="qd5-Gz-vMf"/>
+                            <constraint firstItem="26g-rv-PnV" firstAttribute="centerX" secondItem="BG3-bs-S9K" secondAttribute="centerX" id="rMy-NK-kSW"/>
+                            <constraint firstItem="hgA-8a-PBK" firstAttribute="top" secondItem="26g-rv-PnV" secondAttribute="bottom" constant="10" id="vH2-5q-SDR"/>
+                            <constraint firstItem="YlW-Ya-4AL" firstAttribute="top" secondItem="loc-A5-B6N" secondAttribute="top" constant="48" id="x1g-hk-kgj"/>
+                            <constraint firstItem="loc-A5-B6N" firstAttribute="bottom" secondItem="CZq-fV-W0A" secondAttribute="bottom" constant="24" id="ylc-4v-zkW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="loc-A5-B6N"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vpK-UM-BGP"/>
+                    <connections>
+                        <outlet property="enButton" destination="vPE-np-cVD" id="pzp-mW-oSh"/>
+                        <outlet property="hasAccountBtn" destination="26g-rv-PnV" id="KSn-JP-HYG"/>
+                        <outlet property="imgBackgroundLogin" destination="9ay-Aw-Md6" id="9wl-WF-5y6"/>
+                        <outlet property="noAccountBtn" destination="hgA-8a-PBK" id="G7N-Cw-3J6"/>
+                        <outlet property="questionLabel" destination="r8I-D4-8LZ" id="MWT-pu-cHY"/>
+                        <outlet property="viButton" destination="tiA-Cr-NLR" id="zqs-pU-Jd0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfC-YF-m35" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-171.01449275362319" y="-159.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_logo" width="199" height="57"/>
+        <image name="splash_bg" width="375" height="667"/>
+    </resources>
+</document>

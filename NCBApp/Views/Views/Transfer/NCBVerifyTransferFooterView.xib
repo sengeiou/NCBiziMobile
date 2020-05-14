@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NCBVerifyTransferFooterView" customModule="NCBApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="io5-TQ-KYA">
+                    <rect key="frame" x="15" y="0.0" width="384" height="88"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGp-56-8qa">
+                            <rect key="frame" x="0.0" y="0.0" width="182" height="88"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLS-09-tS7" customClass="NCBCommonButton" customModule="NCBApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="24" width="182" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="7h8-gK-FKP"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="verifyAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Fjr-7w-HAO"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="TLS-09-tS7" firstAttribute="leading" secondItem="dGp-56-8qa" secondAttribute="leading" id="2bt-7t-GCr"/>
+                                <constraint firstItem="TLS-09-tS7" firstAttribute="centerY" secondItem="dGp-56-8qa" secondAttribute="centerY" id="P3a-Y5-2fZ"/>
+                                <constraint firstAttribute="trailing" secondItem="TLS-09-tS7" secondAttribute="trailing" id="gYh-bj-Olh"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShJ-lu-bNA">
+                            <rect key="frame" x="202" y="0.0" width="182" height="88"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiH-EA-msN">
+                                    <rect key="frame" x="71" y="10" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="iQ4-54-Uqc"/>
+                                        <constraint firstAttribute="width" constant="40" id="tMF-Wp-Fqc"/>
+                                    </constraints>
+                                    <state key="normal" title="Button" image="ic_touchid"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQS-sn-ZfY">
+                                    <rect key="frame" x="0.0" y="55" width="182" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="fQS-sn-ZfY" firstAttribute="leading" secondItem="ShJ-lu-bNA" secondAttribute="leading" id="1hX-3K-naA"/>
+                                <constraint firstItem="yiH-EA-msN" firstAttribute="centerX" secondItem="ShJ-lu-bNA" secondAttribute="centerX" id="A8G-Fs-da4"/>
+                                <constraint firstItem="yiH-EA-msN" firstAttribute="top" secondItem="ShJ-lu-bNA" secondAttribute="top" constant="10" id="AyT-XI-UZ5"/>
+                                <constraint firstItem="fQS-sn-ZfY" firstAttribute="top" secondItem="yiH-EA-msN" secondAttribute="bottom" constant="5" id="MZd-4H-Jwb"/>
+                                <constraint firstAttribute="trailing" secondItem="fQS-sn-ZfY" secondAttribute="trailing" id="vn8-3D-xOw"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ShJ-lu-bNA" firstAttribute="width" secondItem="dGp-56-8qa" secondAttribute="width" id="J67-yJ-RDc"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="io5-TQ-KYA" secondAttribute="bottom" id="2cT-am-MaQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="io5-TQ-KYA" secondAttribute="trailing" constant="15" id="Tqh-kT-Evr"/>
+                <constraint firstItem="io5-TQ-KYA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nIO-5B-tuW"/>
+                <constraint firstItem="io5-TQ-KYA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="sFY-9w-QY8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="biometricBtn" destination="yiH-EA-msN" id="Xea-Hp-Ujk"/>
+                <outlet property="biometricContainerView" destination="ShJ-lu-bNA" id="1ec-6A-TXb"/>
+                <outlet property="lbBiometricDesc" destination="fQS-sn-ZfY" id="8sI-9O-4Hp"/>
+                <outlet property="verifyBtn" destination="TLS-09-tS7" id="JW1-n9-C4A"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="-222.1889055472264"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_touchid" width="42.666667938232422" height="42.666667938232422"/>
+    </resources>
+</document>

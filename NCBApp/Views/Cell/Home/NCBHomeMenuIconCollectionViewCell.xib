@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NCBHomeMenuIconCollectionViewCellID" id="gTV-IL-0wX" customClass="NCBHomeMenuIconCollectionViewCell" customModule="NCBApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="93"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="93"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ltn-6p-dDC">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="93"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tSG-Jv-H07">
+                                <rect key="frame" x="21" y="0.0" width="58" height="58"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_icon_background" translatesAutoresizingMaskIntoConstraints="NO" id="nrX-ig-Mw5">
+                                        <rect key="frame" x="0.0" y="0.0" width="58" height="58"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JND-mL-L6h">
+                                        <rect key="frame" x="14" y="14" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="kgp-B8-FxQ"/>
+                                            <constraint firstAttribute="width" secondItem="JND-mL-L6h" secondAttribute="height" multiplier="1:1" id="nVC-8Q-3E6"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="JND-mL-L6h" firstAttribute="centerY" secondItem="tSG-Jv-H07" secondAttribute="centerY" id="Cpq-X0-ksa"/>
+                                    <constraint firstAttribute="bottom" secondItem="nrX-ig-Mw5" secondAttribute="bottom" id="Lbh-CP-8zX"/>
+                                    <constraint firstAttribute="width" constant="58" id="Luu-gX-rF5"/>
+                                    <constraint firstAttribute="width" secondItem="tSG-Jv-H07" secondAttribute="height" multiplier="1:1" id="NHY-yG-b8W"/>
+                                    <constraint firstItem="nrX-ig-Mw5" firstAttribute="top" secondItem="tSG-Jv-H07" secondAttribute="top" id="PTX-Vp-QmH"/>
+                                    <constraint firstItem="JND-mL-L6h" firstAttribute="centerX" secondItem="tSG-Jv-H07" secondAttribute="centerX" id="T2y-WM-rcX"/>
+                                    <constraint firstAttribute="trailing" secondItem="nrX-ig-Mw5" secondAttribute="trailing" id="Xmh-Xl-evb"/>
+                                    <constraint firstItem="nrX-ig-Mw5" firstAttribute="leading" secondItem="tSG-Jv-H07" secondAttribute="leading" id="uQg-YW-V5g"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3w-DR-uC9">
+                                <rect key="frame" x="0.0" y="63" width="100" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="F3w-DR-uC9" secondAttribute="trailing" id="Crf-jO-eWw"/>
+                            <constraint firstItem="F3w-DR-uC9" firstAttribute="leading" secondItem="Ltn-6p-dDC" secondAttribute="leading" id="PmX-N6-Mft"/>
+                            <constraint firstItem="tSG-Jv-H07" firstAttribute="centerX" secondItem="Ltn-6p-dDC" secondAttribute="centerX" id="Q6i-OE-ATR"/>
+                            <constraint firstItem="tSG-Jv-H07" firstAttribute="top" secondItem="Ltn-6p-dDC" secondAttribute="top" id="vGt-b0-1p1"/>
+                            <constraint firstItem="F3w-DR-uC9" firstAttribute="top" secondItem="tSG-Jv-H07" secondAttribute="bottom" constant="5" id="van-Nk-h8y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ltn-6p-dDC" secondAttribute="trailing" id="3am-mH-nVW"/>
+                <constraint firstAttribute="bottom" secondItem="Ltn-6p-dDC" secondAttribute="bottom" id="6aP-yB-zxE"/>
+                <constraint firstItem="Ltn-6p-dDC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="F17-il-QDn"/>
+                <constraint firstItem="Ltn-6p-dDC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Qcs-0H-EoG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="307" height="159"/>
+            <connections>
+                <outlet property="bgIconView" destination="nrX-ig-Mw5" id="hbq-4n-R2t"/>
+                <outlet property="iconView" destination="JND-mL-L6h" id="OX5-iQ-hAD"/>
+                <outlet property="lbTitle" destination="F3w-DR-uC9" id="aMn-Dn-iRO"/>
+                <outlet property="wrapView" destination="Ltn-6p-dDC" id="tYa-6f-fpx"/>
+            </connections>
+            <point key="canvasLocation" x="-75" y="48"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="menu_icon_background" width="64" height="64"/>
+    </resources>
+</document>

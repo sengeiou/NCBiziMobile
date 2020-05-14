@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NCBCreditCardGeneralInfoHeaderView" customModule="NCBApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mec-DP-NH0">
+                    <rect key="frame" x="30" y="34.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0n-ME-gse">
+                    <rect key="frame" x="30" y="89" width="354" height="1"/>
+                    <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="uzd-md-bJV"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vw3-ne-WdB">
+                    <rect key="frame" x="342" y="29.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbg-9R-d5z">
+                    <rect key="frame" x="342" y="52.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="C0n-ME-gse" secondAttribute="trailing" constant="30" id="NLM-OA-M5D"/>
+                <constraint firstItem="Fbg-9R-d5z" firstAttribute="top" secondItem="vw3-ne-WdB" secondAttribute="bottom" constant="2" id="OYI-fe-4xX"/>
+                <constraint firstItem="Fbg-9R-d5z" firstAttribute="trailing" secondItem="vw3-ne-WdB" secondAttribute="trailing" id="RtR-WU-hbu"/>
+                <constraint firstItem="C0n-ME-gse" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="cnk-p6-J1X"/>
+                <constraint firstAttribute="bottom" secondItem="C0n-ME-gse" secondAttribute="bottom" id="g16-7T-Dl9"/>
+                <constraint firstItem="vw3-ne-WdB" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-5" id="jTH-xG-0HC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vw3-ne-WdB" secondAttribute="trailing" constant="30" id="kEt-AO-BGX"/>
+                <constraint firstItem="Mec-DP-NH0" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="kbf-CV-8qL"/>
+                <constraint firstItem="Mec-DP-NH0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="v9S-Tq-Vx1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="lbLimit" destination="vw3-ne-WdB" id="u9A-2S-22z"/>
+                <outlet property="lbLimitValue" destination="Fbg-9R-d5z" id="ufc-Kg-dgA"/>
+                <outlet property="lbPeriodTitle" destination="Mec-DP-NH0" id="EUU-E0-ktE"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="-177.21139430284859"/>
+        </view>
+    </objects>
+</document>

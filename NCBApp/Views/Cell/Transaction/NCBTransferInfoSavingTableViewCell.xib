@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NCBTransferInfoSavingTableViewCell" id="KGk-i7-Jjw" customClass="NCBTransferInfoSavingTableViewCell" customModule="NCBApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPq-RT-1yC">
+                        <rect key="frame" x="30" y="0.0" width="260" height="1"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="mf0-PO-MB9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cHF-Jy-jg5"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gP8-M5-4LB">
+                        <rect key="frame" x="48" y="10" width="224" height="23.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="tPq-RT-1yC" secondAttribute="trailing" constant="30" id="128-xW-8vp"/>
+                    <constraint firstItem="tPq-RT-1yC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4EF-H8-EkF"/>
+                    <constraint firstItem="gP8-M5-4LB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="D2O-u4-iNf"/>
+                    <constraint firstItem="gP8-M5-4LB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="48" id="F9x-cm-DXi"/>
+                    <constraint firstItem="gP8-M5-4LB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Wxc-BO-Fd0"/>
+                    <constraint firstItem="tPq-RT-1yC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="aa3-VM-MIM"/>
+                    <constraint firstItem="gP8-M5-4LB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="j20-1g-gh5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbContent" destination="gP8-M5-4LB" id="EtS-6a-1Y6"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

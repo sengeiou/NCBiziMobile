@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Register Auto Debt Deduction View Controller-->
+        <scene sceneID="nqA-oM-E6A">
+            <objects>
+                <viewController storyboardIdentifier="NCBRegisterAutoDebtDeductionViewController" id="aO6-p3-qah" customClass="NCBRegisterAutoDebtDeductionViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z6p-fE-vAj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zO-Ua-Cbd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="577"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5U4-2N-mij">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="417"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNM-eZ-Ocj" customClass="NCBCreditCardInfoView" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="23.5" y="40" width="328" height="207"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="328" id="TOY-f5-ueM"/>
+                                                    <constraint firstAttribute="width" secondItem="xNM-eZ-Ocj" secondAttribute="height" multiplier="328:207" id="qu3-C5-YiZ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XkE-sM-5nU">
+                                                <rect key="frame" x="28" y="267" width="319" height="100"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="ZWO-kP-pev"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l0A-W4-5Xc" customClass="NewNCBCommonTextField" customModule="NCBApp" customModuleProvider="target">
+                                                <rect key="frame" x="28" y="367" width="319" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="WZF-pe-9BC"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="l0A-W4-5Xc" firstAttribute="top" secondItem="XkE-sM-5nU" secondAttribute="bottom" id="359-mp-Vtb"/>
+                                            <constraint firstItem="xNM-eZ-Ocj" firstAttribute="top" secondItem="5U4-2N-mij" secondAttribute="top" constant="40" id="C9g-ZO-uez"/>
+                                            <constraint firstItem="xNM-eZ-Ocj" firstAttribute="centerX" secondItem="5U4-2N-mij" secondAttribute="centerX" id="K6o-GA-yv3"/>
+                                            <constraint firstItem="XkE-sM-5nU" firstAttribute="leading" secondItem="5U4-2N-mij" secondAttribute="leading" constant="28" id="MZM-gT-GFk"/>
+                                            <constraint firstItem="XkE-sM-5nU" firstAttribute="top" secondItem="xNM-eZ-Ocj" secondAttribute="bottom" constant="20" id="Nmg-t9-Urv"/>
+                                            <constraint firstItem="l0A-W4-5Xc" firstAttribute="leading" secondItem="XkE-sM-5nU" secondAttribute="leading" id="ZQ0-V7-yEe"/>
+                                            <constraint firstAttribute="bottom" secondItem="l0A-W4-5Xc" secondAttribute="bottom" id="jLU-QM-mfI"/>
+                                            <constraint firstItem="l0A-W4-5Xc" firstAttribute="width" secondItem="XkE-sM-5nU" secondAttribute="width" id="jSU-VK-Sjg"/>
+                                            <constraint firstAttribute="trailing" secondItem="XkE-sM-5nU" secondAttribute="trailing" constant="28" id="nI8-FZ-5uH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5U4-2N-mij" secondAttribute="trailing" id="33K-v7-b6O"/>
+                                    <constraint firstItem="5U4-2N-mij" firstAttribute="leading" secondItem="4zO-Ua-Cbd" secondAttribute="leading" id="Mts-11-ReD"/>
+                                    <constraint firstItem="5U4-2N-mij" firstAttribute="top" secondItem="4zO-Ua-Cbd" secondAttribute="top" id="Muw-a7-Vnv"/>
+                                    <constraint firstAttribute="bottom" secondItem="5U4-2N-mij" secondAttribute="bottom" id="eNb-AQ-om8"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrq-Xt-eVG" customClass="NCBCommonButton" customModule="NCBApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="597" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ohp-ko-ali"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ia7-0g-jp8" firstAttribute="trailing" secondItem="zrq-Xt-eVG" secondAttribute="trailing" constant="16" id="10Q-Oi-wGO"/>
+                            <constraint firstItem="4zO-Ua-Cbd" firstAttribute="leading" secondItem="ia7-0g-jp8" secondAttribute="leading" id="C72-ff-zaO"/>
+                            <constraint firstItem="5U4-2N-mij" firstAttribute="width" secondItem="Z6p-fE-vAj" secondAttribute="width" id="L9B-mo-DjS"/>
+                            <constraint firstItem="zrq-Xt-eVG" firstAttribute="top" secondItem="4zO-Ua-Cbd" secondAttribute="bottom" id="PL6-LP-4SO"/>
+                            <constraint firstItem="5U4-2N-mij" firstAttribute="height" secondItem="Z6p-fE-vAj" secondAttribute="height" priority="250" id="Umm-VV-xK7"/>
+                            <constraint firstItem="ia7-0g-jp8" firstAttribute="bottom" secondItem="zrq-Xt-eVG" secondAttribute="bottom" constant="20" id="WEf-PG-rUO"/>
+                            <constraint firstItem="4zO-Ua-Cbd" firstAttribute="top" secondItem="ia7-0g-jp8" secondAttribute="top" id="Yrx-6L-HDB"/>
+                            <constraint firstItem="ia7-0g-jp8" firstAttribute="trailing" secondItem="4zO-Ua-Cbd" secondAttribute="trailing" id="iH5-1g-Ajg"/>
+                            <constraint firstItem="zrq-Xt-eVG" firstAttribute="leading" secondItem="ia7-0g-jp8" secondAttribute="leading" constant="16" id="r2X-Xj-S8P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ia7-0g-jp8"/>
+                    </view>
+                    <connections>
+                        <outlet property="commonCreditCardInfoView" destination="xNM-eZ-Ocj" id="kZj-ge-1Uq"/>
+                        <outlet property="containerSourceView" destination="XkE-sM-5nU" id="tDS-oa-GQQ"/>
+                        <outlet property="continueBtn" destination="zrq-Xt-eVG" id="nYt-9m-Wbc"/>
+                        <outlet property="tfLevel" destination="l0A-W4-5Xc" id="vSY-bc-7jy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AMT-Tr-tGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="138"/>
+        </scene>
+        <!--Unregister Auto Debt Deduction View Controller-->
+        <scene sceneID="AQU-kN-QMB">
+            <objects>
+                <viewController storyboardIdentifier="NCBUnregisterAutoDebtDeductionViewController" id="bio-FV-WBh" customClass="NCBUnregisterAutoDebtDeductionViewController" customModule="NCBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="07P-xh-I0a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transaction_info_bg" translatesAutoresizingMaskIntoConstraints="NO" id="MtT-DR-rIw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xA-kh-HOu" customClass="NCBCreditCardInfoView" customModule="NCBApp" customModuleProvider="target">
+                                <rect key="frame" x="23.5" y="60" width="328" height="207"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="328" id="fhB-sI-bun"/>
+                                    <constraint firstAttribute="width" secondItem="7xA-kh-HOu" secondAttribute="height" multiplier="328:207" id="yUH-mX-SmX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MtT-DR-rIw" firstAttribute="top" secondItem="07P-xh-I0a" secondAttribute="top" id="6z3-lY-iyE"/>
+                            <constraint firstAttribute="bottom" secondItem="MtT-DR-rIw" secondAttribute="bottom" id="Oh4-4k-3iw"/>
+                            <constraint firstItem="7xA-kh-HOu" firstAttribute="top" secondItem="jrl-Ta-4VK" secondAttribute="top" constant="40" id="ReF-LA-8Pn"/>
+                            <constraint firstAttribute="trailing" secondItem="MtT-DR-rIw" secondAttribute="trailing" id="flX-gL-fMb"/>
+                            <constraint firstItem="7xA-kh-HOu" firstAttribute="centerX" secondItem="jrl-Ta-4VK" secondAttribute="centerX" id="u7Q-Zh-QUQ"/>
+                            <constraint firstItem="MtT-DR-rIw" firstAttribute="leading" secondItem="07P-xh-I0a" secondAttribute="leading" id="wFP-jY-W3B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jrl-Ta-4VK"/>
+                    </view>
+                    <connections>
+                        <outlet property="commonCreditCardInfoView" destination="7xA-kh-HOu" id="606-A5-WQ5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Lw-dp-o7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="transaction_info_bg" width="125" height="222.5"/>
+    </resources>
+</document>

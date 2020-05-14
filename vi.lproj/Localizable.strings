@@ -1,0 +1,30 @@
+//  Login first time
+"login.ncb.customer.question" = "Bạn đã là khách hàng của NCB?";
+"login.I.am.customer" = "Tôi là khách hàng NCB";
+"login.I.am.new.customer" = "Tôi là khách hàng mới";
+
+"login.username.text" = "Tên đăng nhập";
+"login.password.text" = "Mật khẩu";
+"login.with.text" = "Đăng nhập bằng %@";
+"login.use.face.id.text" = "FaceID";
+"login.use.touch.id.text" = "vân tay";
+"login.button.text" = "Đăng nhập";
+
+"login.menu.register.service" = "Đăng ký dịch vụ";
+"login.menu.contact" = "Liên hệ";
+"login.menu.support" = "Hỗ trợ";
+"login.menu.network" = "Mạng lưới";
+
+//  Common button
+"common.close.text" = "Đóng";
+"common.cancel.text" = "Huỷ";
+"common.ok.text" = "OK";
+"common.update.text" = "Cập nhật";
+"common.skip.text" = "Bỏ qua";
+
+//  Dialog
+"dialog.notify.title" = "Thông báo";
+"dialog.new.account.message" = "Quý khách vui lòng đến CN/PGD gần nhất hoặc liên hệ Tổng đài chăm sóc Khách hàng 18006061 để được hỗ trợ";
+"dialog.enter.username.message" = "Vui lòng nhập tên đăng nhập";
+"dialog.enter.password.message" = "Vui lòng nhập mật khẩu đăng nhập";
+"dialog.login.to.active.faceID.touchId.message" = "Vui lòng đăng nhập ứng dụng để kích hoạt đăng nhập bằng \%@";
